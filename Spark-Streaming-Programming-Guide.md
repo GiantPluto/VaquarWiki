@@ -61,9 +61,13 @@ Spark Streaming comes with several API methods that are useful for processing da
 
 Before we discuss the sample application, let’s take a look at different steps involved in a typical Spark Streaming program.
 
-    Spark Streaming Context is used for processing the real-time data streams. So, the first step is to initialize the StreamingContext object using two parameters, SparkContext and sliding interval time. Sliding interval sets the update window where we process the data coming in as streams. Once the context is initialized, no new computations can be defined or added to the existing context. Also, only one StreamingContext object can be active at the same time.
-    After Spark Streaming context is defined, we specify the input data sources by creating input DStreams. In our sample application, the input data source is a log message generator that uses Apache Kafka distributed database and messaging system. Log generator program creates random log messages to simulate a web server run-time environment where log messages are continuously generated as various web applications serve the user traffic.
-    Define the computations using the Sparking Streaming Transformations API like map and reduce to DStreams.
-    After streaming computation logic is defined, we can start receiving the data and process it using start method in StreamingContext object created earlier.
-    Finally, we wait for the streaming data processing to be stopped using the awaitTermination method of StreamingContext object.
+* Spark Streaming Context is used for processing the real-time data streams. So, the first step is to initialize the StreamingContext object using two parameters, SparkContext and sliding interval time. Sliding interval sets the update window where we process the data coming in as streams. Once the context is initialized, no new computations can be defined or added to the existing context. Also, only one StreamingContext object can be active at the same time.
+
+* After Spark Streaming context is defined, we specify the input data sources by creating input DStreams. In our sample application, the input data source is a log message generator that uses Apache Kafka distributed database and messaging system. Log generator program creates random log messages to simulate a web server run-time environment where log messages are continuously generated as various web applications serve the user traffic.
+
+* Define the computations using the Sparking Streaming Transformations API like map and reduce to DStreams.
+
+* After streaming computation logic is defined, we can start receiving the data and process it using start method in StreamingContext object created earlier.
+
+* Finally, we wait for the streaming data processing to be stopped using the awaitTermination method of StreamingContext object.
 
