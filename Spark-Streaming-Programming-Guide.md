@@ -14,3 +14,5 @@
 
 Example :
 * https://github.com/dmatrix/examples/blob/master/spark/databricks/apps/scala/2.0/src/main/scala/zips/SparkSessionZipsExample.scala
+
+* https://databricks.com/blog/2016/08/15/how-to-use-sparksession-in-apache-spark-2-0.html
