@@ -71,3 +71,9 @@ Before we discuss the sample application, let’s take a look at different steps
 
 * Finally, we wait for the streaming data processing to be stopped using the awaitTermination method of StreamingContext object.
 
+
+
+
+https://cdn.infoq.com/statics_s1_20161208-0302u1/resource/articles/apache-spark-streaming/en/resources/spark-streaming-kafka-sample-app.zip
+
+https://github.com/databricks/reference-apps
