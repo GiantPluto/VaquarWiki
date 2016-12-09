@@ -16,3 +16,27 @@ Example :
 * https://github.com/dmatrix/examples/blob/master/spark/databricks/apps/scala/2.0/src/main/scala/zips/SparkSessionZipsExample.scala
 
 * https://databricks.com/blog/2016/08/15/how-to-use-sparksession-in-apache-spark-2-0.html
+
+
+
+
+https://www.infoq.com/articles/apache-spark-streaming
+
+**DStream**
+
+DStream (short for Discretized Stream) is the basic abstraction in Spark Streaming and represents a continuous stream of data. DStreams can be created either from input data streams from sources such as Kafka, Flume, and Kinesis, or by applying operations on other DStreams. Internally, a DStream is represented as a sequence of RDD objects.
+
+Similar to the transformation and action operations on RDDs, DStreams support the following operations:
+
+*  map
+*     flatMap
+*     filter
+*     count
+*     reduce
+*     countByValue
+*     reduceByKey
+*     join
+*     updateStateByKey
+
+
+
