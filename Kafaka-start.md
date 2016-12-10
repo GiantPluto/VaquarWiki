@@ -15,19 +15,24 @@ sudo tar -xvf kafka_2.10-0.10.1.0.tgz -C /opt/Kafka/
 
 **Command :+1: **
 
-`osboxes@osboxes:~$ cd /`
-`osboxes@osboxes:/$ cd opt`
-`osboxes@osboxes:/opt$ ls `
-`Kafka`
-`osboxes@osboxes:/opt$ c kafaka`
-`c: command not found`
-`osboxes@osboxes:/opt$ ls `
-`Kafka`
-`osboxes@osboxes:/opt$ cd bin`
-`bash: cd: bin: No such file or directory`
-`osboxes@osboxes:/opt$ ls`
-`Kafka`
-`osboxes@osboxes:/opt$ cd Kafaka`
+        `osboxes@osboxes:~$ cd /`
+        `osboxes@osboxes:/$ cd opt`
+
+       `osboxes@osboxes:/opt$ ls `
+        `Kafka`
+
+       `osboxes@osboxes:/opt$ c kafaka`
+       `c: command not found`
+`
+       osboxes@osboxes:/opt$ ls `
+       `Kafka`
+
+     `osboxes@osboxes:/opt$ cd bin`
+     `bash: cd: bin: No such file or directory`
+
+    `osboxes@osboxes:/opt$ ls`    
+      `Kafka`
+      `osboxes@osboxes:/opt$ cd Kafaka`
 `bash: cd: Kafaka: No such file or directory`
 `osboxes@osboxes:/opt$ ls `
 `Kafka`
