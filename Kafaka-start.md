@@ -15,42 +15,48 @@ sudo tar -xvf kafka_2.10-0.10.1.0.tgz -C /opt/Kafka/
 
 **Command :+1: **
 
-        `osboxes@osboxes:~$ cd /`
-        `osboxes@osboxes:/$ cd opt`
+            `osboxes@osboxes:~$ cd /`
+            `osboxes@osboxes:/$ cd opt`
 
-       `osboxes@osboxes:/opt$ ls `
-        `Kafka`
+             `osboxes@osboxes:/opt$ ls `
+              `Kafka`
 
-       `osboxes@osboxes:/opt$ c kafaka`
-       `c: command not found`
+            `osboxes@osboxes:/opt$ c kafaka`
+            `c: command not found`
 `
-       osboxes@osboxes:/opt$ ls `
-       `Kafka`
+              osboxes@osboxes:/opt$ ls `
+              `Kafka`
 
-     `osboxes@osboxes:/opt$ cd bin`
-     `bash: cd: bin: No such file or directory`
+             `osboxes@osboxes:/opt$ cd bin`
+              `bash: cd: bin: No such file or directory`
 
-    `osboxes@osboxes:/opt$ ls`    
-      `Kafka`
-      `osboxes@osboxes:/opt$ cd Kafaka`
-`bash: cd: Kafaka: No such file or directory`
-`osboxes@osboxes:/opt$ ls `
-`Kafka`
-`osboxes@osboxes:/opt$ cd kafka`
-`bash: cd: kafka: No such file or directory`
-`osboxes@osboxes:/opt$ cd Kafka`
-`osboxes@osboxes:/opt/Kafka$ ls`
-`kafka-0.10.1.0-src  kafka_2.10-0.10.1.0`
-`osboxes@osboxes:/opt/Kafka$ cd bi`
-`bash: cd: bi: No such file or directory`
-`osboxes@osboxes:/opt/Kafka$ l`
-`kafka-0.10.1.0-src/  kafka_2.10-0.10.1.0/`
-`osboxes@osboxes:/opt/Kafka$ ls`
-`kafka-0.10.1.0-src  kafka_2.10-0.10.1.0`
-`osboxes@osboxes:/opt/Kafka$ cd kafka_2.10-0.10.1.0`
-`osboxes@osboxes:/opt/Kafka/kafka_2.10-0.10.1.0$ ls`
-`bin  config  libs  LICENSE  logs  NOTICE  site-docs`
-`osboxes@osboxes:/opt/Kafka/kafka_2.10-0.10.1.0$ cd bin`
+                `osboxes@osboxes:/opt$ ls`    
+                 `Kafka`
+      
+          `osboxes@osboxes:/opt$ cd Kafaka`
+          `bash: cd: Kafaka: No such file or directory`
+
+          `osboxes@osboxes:/opt$ ls `
+           `Kafka`
+          
+          `osboxes@osboxes:/opt$ cd kafka`
+           `bash: cd: kafka: No such file or directory`
+
+           `osboxes@osboxes:/opt$ cd Kafka`
+           `osboxes@osboxes:/opt/Kafka$ ls`
+
+           `kafka-0.10.1.0-src  kafka_2.10-0.10.1.0`
+     
+            `osboxes@osboxes:/opt/Kafka$ cd bi`
+            `bash: cd: bi: No such file or directory`
+             `osboxes@osboxes:/opt/Kafka$ l`
+             `kafka-0.10.1.0-src/  kafka_2.10-0.10.1.0/`
+             `osboxes@osboxes:/opt/Kafka$ ls`
+             `kafka-0.10.1.0-src  kafka_2.10-0.10.1.0`
+               `osboxes@osboxes:/opt/Kafka$ cd kafka_2.10-0.10.1.0`
+              `osboxes@osboxes:/opt/Kafka/kafka_2.10-0.10.1.0$ ls`
+              `bin  config  libs  LICENSE  logs  NOTICE  site-docs`
+              `osboxes@osboxes:/opt/Kafka/kafka_2.10-0.10.1.0$ cd bin`
 
        `sudo /opt/Kafka/kafka_2.10-0.10.1.0/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic testing`
 
