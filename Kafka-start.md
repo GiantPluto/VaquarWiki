@@ -1,4 +1,8 @@
- tar -xvf /home/osboxes/Downloads/kafka_2.10-0.10.1.0.tgz  -C /opt/Kafka/
+ 
+
+[https://youtu.be/GRPLRONVDWY](https://youtu.be/GRPLRONVDWY)
+
+tar -xvf /home/osboxes/Downloads/kafka_2.10-0.10.1.0.tgz  -C /opt/Kafka/
 
 /home/osboxes/Downloads/kafka_2.10-0.10.1.0.tgz
 
