@@ -152,3 +152,47 @@ This feature is also called as "Consumer Group". In the same way, Kafka will pro
 A critical dependency of Apache Kafka is Apache Zookeeper, which is a distributed configuration and synchronization service. Zookeeper serves as the coordination interface between the Kafka brokers and consumers. The Kafka servers share information via a Zookeeper cluster. Kafka stores basic metadata in Zookeeper such as information about topics, brokers, consumer offsets (queue readers) and so on.
 
 Since all the critical information is stored in the Zookeeper and it normally replicates this data across its ensemble, failure of Kafka broker / Zookeeper does not affect the state of the Kafka cluster. Kafka will restore the state, once the Zookeeper restarts. This gives zero downtime for Kafka. The leader election between the Kafka broker is also done by using Zookeeper in the event of leader failure.
+
+----------------------------------------------------------------------------------------------------------------
+**Basic Topic Operations**
+
+**Modifying a Topic**
+
+As you have already understood how to create a topic in Kafka Cluster. Now let us modify a created topic using the following command
+
+Syntax
+
+     bin/kafka-topics.sh —zookeeper localhost:2181 --alter --topic topic_name 
+     --parti-tions count
+
+Example
+
+We have already created a topic “Hello-Kafka” with single partition count and one replica factor. 
+Now using “alter” command we have changed the partition count.
+
+     bin/kafka-topics.sh --zookeeper localhost:2181 
+     --alter --topic Hello-kafka --parti-tions 2
+
+Output
+
+WARNING: If partitions are increased for a topic that has a key, 
+the partition logic or ordering of the messages will be affected
+Adding partitions succeeded!
+
+**Deleting a Topic**
+
+To delete a topic, you can use the following syntax.
+
+Syntax
+
+        bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic topic_name
+
+Example
+
+        bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic Hello-kafka
+
+Output
+
+       > Topic Hello-kafka marked for deletion
+
+Note −This will have no impact if delete.topic.enable is not set to true
