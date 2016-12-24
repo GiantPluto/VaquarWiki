@@ -1,0 +1,1 @@
+http://www.ashishpaliwal.com/blog/2015/06/apache-kafka-quick-start-guide/
