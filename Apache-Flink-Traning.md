@@ -1,0 +1,1 @@
+http://dataartisans.github.io/flink-training/
