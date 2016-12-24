@@ -79,3 +79,7 @@ Consumers read data from brokers. Consumers subscribes to one or more topics and
 
 **10 Follower**
 Node which follows leader instructions are called as follower. If the leader fails, one of the follower will automatically become the new leader. A follower acts as normal consumer, pulls messages and up-dates its own data store.
+
+
+**Apache Kafka - Cluster Architecture**
+![](https://www.tutorialspoint.com/apache_kafka/images/cluster_architecture.jpg)
