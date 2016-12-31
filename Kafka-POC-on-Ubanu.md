@@ -105,3 +105,6 @@ Runing jar for development:
 
       java -cp .:/home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs/*:/home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs/KafkaAPIClient-1.0-SNAPSHOT.jar  com.spnotes.kafka.simple.Consumer test group1
 
+
+
+[https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart)
