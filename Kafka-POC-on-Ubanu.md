@@ -99,7 +99,6 @@ Kafka Commands
 -----------------------------------------------------------------------------------------------------------------------
 Runing jar for development:
 
-    http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html?page=2
 -----------------------------------------------------------------------------------------------------------------------
       java -cp .:/home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs/*:/home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs/KafkaAPIClient-1.0-SNAPSHOT.jar  com.spnotes.kafka.simple.Producer test
 
