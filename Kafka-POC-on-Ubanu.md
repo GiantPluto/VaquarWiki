@@ -61,14 +61,14 @@ Kafka Commands
 
 --Copy jar
 
-   sudo  mv /home/osboxes/Sparkdatafile/kafka-java-example-0.0.1-SNAPSHOT.jar /opt/Kafka/kafka_2.10-0.10.1.0/libs
-   sudo mv /home/osboxes/Downloads/kafka-java-example-0.0.1-SNAPSHOT.jar /home/osboxes/Kafka/kafka_2.10-0.10.1.1
+       sudo  mv /home/osboxes/Sparkdatafile/kafka-java-example-0.0.1-SNAPSHOT.jar /opt/Kafka/kafka_2.10-0.10.1.0/libs
+       sudo mv /home/osboxes/Downloads/kafka-java-example-0.0.1-SNAPSHOT.jar /home/osboxes/Kafka/kafka_2.10-0.10.1.1
 
-   sudo mv /home/osboxes/Downloads/KafkaAPIClient-1.0-SNAPSHOT.jar /home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs
+       sudo mv /home/osboxes/Downloads/KafkaAPIClient-1.0-SNAPSHOT.jar /home/osboxes/Kafka/kafka_2.10-0.10.1.1/libs
 
 --run jar in unix
 
-     java -cp /opt/Kafka/kafka_2.10-0.10.1.0/libs/* :/opt/Kafka/kafka_2.10-0.10.1.0/libs/kafka-java-example-0.0.1-SNAPSHOT.jar  com.howtoprogram.kafka.ProducerTest
+      java -cp /opt/Kafka/kafka_2.10-0.10.1.0/libs/* :/opt/Kafka/kafka_2.10-0.10.1.0/libs/kafka-java-example-0.0.1-SNAPSHOT.jar  com.howtoprogram.kafka.ProducerTest
 
 
     java -cp /opt/Kafka/kafka_2.10-0.10.1.0/libs/* :/opt/Kafka/kafka_2.10-0.10.1.0/libs/kafka-java-example-0.0.1-SNAPSHOT.jar  com.howtoprogram.kafka.ConsumerTest
