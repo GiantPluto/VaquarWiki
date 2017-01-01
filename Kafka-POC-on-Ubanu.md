@@ -107,5 +107,5 @@ Runing jar for development:
 
 
 
-[https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart)
-[http://stackoverflow.com/questions/41410151/apache-kafka-exception-org-apache-kafka-clients-consumer-kafkaconsumer-subscri?noredirect=1#comment70029694_41410151](http://stackoverflow.com/questions/41410151/apache-kafka-exception-org-apache-kafka-clients-consumer-kafkaconsumer-subscri?noredirect=1#comment70029694_41410151)
+* [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart)
+* [http://stackoverflow.com/questions/41410151/apache-kafka-exception-org-apache-kafka-clients-consumer-kafkaconsumer-subscri?noredirect=1#comment70029694_41410151](http://stackoverflow.com/questions/41410151/apache-kafka-exception-org-apache-kafka-clients-consumer-kafkaconsumer-subscri?noredirect=1#comment70029694_41410151)
