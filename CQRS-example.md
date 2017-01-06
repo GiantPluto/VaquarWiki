@@ -1,0 +1,1 @@
+https://github.com/lagom/activator-logom-cargotracker
