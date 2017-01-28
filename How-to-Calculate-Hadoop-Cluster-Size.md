@@ -21,3 +21,15 @@ n= H/d = c*r*S/(1-i)*d
 where d= disk space available per node. All other parameters remain the same as in 1. 
 
 Example: If 8TB is the available disk space per node (10 disks with 1 TB , 2 disk for operating system etc were excluded.). Assuming initial data size is 600 TB. n= 600/8=75 data nodes needed
+
+
+------------------------------------------------------------------------------------------------------------
+
+* http://hadoopmag.com/how-to-plan-capacity-for-hadoop-cluster/
+
+* https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.3.0/bk_cluster-planning-guide/bk_cluster-planning-guide-20150721.pdf
+
+
+* http://eprints.bournemouth.ac.uk/22861/1/Scaling_beyond_one_rack_and_sizing_of_Hadoop_platform.pdf
+
+* http://files.cloudera.com/pdf/Dell_Cloudera_Solution_for_Apache_Hadoop_Reference_Architecture.pdf
