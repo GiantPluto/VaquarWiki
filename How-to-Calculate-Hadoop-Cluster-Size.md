@@ -3,13 +3,13 @@ This is a formula to estimate Hadoop storage (H):
 H=c*r*S/(1-i) 
 
 where: 
-c = average compression ratio. It depends on the type of compression used (Snappy, LZOP, ...) and size of the data. When no compression is used, c=1. 
+* c = average compression ratio. It depends on the type of compression used (Snappy, LZOP, ...) and size of the data. When no compression is used, c=1. 
 
-r = replication factor. It is usually 3 in a production cluster. 
+* r = replication factor. It is usually 3 in a production cluster. 
 
-S = size of data to be moved to Hadoop. This could be a combination of historical data and incremental data. The incremental data can be daily for example and projected over a period of time (3 years for example). 
+* S = size of data to be moved to Hadoop. This could be a combination of historical data and incremental data. The incremental data can be daily for example and projected over a period of time (3 years for example). 
 
-i = intermediate factor. It is usually 1/3 or 1/4. Hadoop's working space dedicated to storing intermediate results of Map phases. 
+* i = intermediate factor. It is usually 1/3 or 1/4. Hadoop's working space dedicated to storing intermediate results of Map phases. 
 
 Example: With no compression i.e. c=1, a replication factor of 3, an intermediate factor of .25=1/4 
 H= 1*3*S/(1-1/4)=3*S/(3/4)=4*S 
