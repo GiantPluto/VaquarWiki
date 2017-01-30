@@ -8,7 +8,7 @@ An easy way remember this is to think of a machine on a server rack, we add more
 
 
 
-Horizontal Scaling - also referred to as "scale-out" is basically the addition of more machines or setting up a cluster or a distributed environment for your software system. This usually requires a load-balancer program which is a middle-ware component in the standard 3 tier client-server architectural model.
+**Horizontal Scaling **- also referred to as "scale-out" is basically the addition of more machines or setting up a cluster or a distributed environment for your software system. This usually requires a load-balancer program which is a middle-ware component in the standard 3 tier client-server architectural model.
 
 Load-Balancer is responsible to distribute user requests (load) among the various back-end systems/machines/nodes in the cluster. Each of these back-end machines run a copy of your software and hence capable of servicing requests. This is just one of the various functions that load balancer may be performing. Another very common responsibility is "health-check" where the load balancer uses the "ping-echo" protocol or exchanges heartbeat messages with all the servers to ensure they are up and running fine.
 
@@ -37,7 +37,9 @@ Whether or not the back-end nodes communicate with each other, does our system n
 What cluster setup do we have to design for ? Is it a "replica" cluster, where data on each node is replicated to some or every other node. In case of former, what is the replication factor, and how do we decide it ? Or is it a sharded cluster where cluster is divided into various shards or units. A shard is a designated group of nodes. Each shard takes care of a particular partition of data. Data across shards is not replicated, but each shard can adopt replication strategy within itself. Whatever distributed system we design, it should ideally be able to answer the above and many other similar questions.
 All this is what makes a distributed system so interesting and challenging to design and implement.
 
-Vertical Scaling - also referred to as "scale-up" approach is an attempt to increase the capacity of a single machine : By adding more processing power By adding more storage More memory etc Summary:
+**Vertical Scaling -** also referred to as "scale-up" approach is an attempt to increase the capacity of a single machine : By adding more processing power By adding more storage More memory etc Summary:
+***
+
 
 What is important here is to understand the differences between these 2 scaling approaches, identify what suits our requirements, and see if the application really fits the model we choose.
 
