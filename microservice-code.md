@@ -147,43 +147,5 @@ There are other Netflix OSS components you may want to consider depending on the
 One area we want to improve is the implementation of some of our asynchronous services. We are just using plain Java, Java multi-threading and Java Futures to handle asynchronous requests. We noticed that the code is becoming more and more unwieldy. We want to experiment with reactive programming (RxJava and Java 8 Completable Futures) to see how we can simplify our code and also avoid any scalability issues in the future.
 
 -------------------------------------------------------------------------
+https://github.com/peterbourgon/go-microservices
 
-microservices
-Click here for slides to the November 2016 Go + microservices workshop at QCon SF.
-
-Links and further reading.
-
-Microservice definitions
-
-Challenges When Implementing Microservices and Why Programming Style Matters — Fred George, InfoQ
-Software That Fits In Your Head — Dan North, InfoQ
-Bounded Context — Martin Fowler
-12Factor.net
-Microservices architecture patterns and best practices — Chris Richardson
-Microservices pattern language — Chris Richardson
-Microservices: Real Architectural Patterns — Camille Fournier
-Architecture
-
-The Hexagonal Architecture
-The Clean Architecture incl. the Dependency Rule
-Related projects
-
-Go kit
-Finagle
-Netflix Ribbon, Eureka, Hystrix
-Spring Boot
-Prometheus
-OpenTracing, Zipkin
-Introduction to Pact; Getting started with Pact
-Miscellaneous links
-
-A case for microservices — Peter Bourgon
-The Search for a Logging Interface — Chris Hines
-Logging v. instrumentation — Peter Bourgon
-Go concurrency patterns: context — Sameer Ajmani, Golang Blog
-Context do's and don'ts — Peter Bourgon
-Advanced Testing with Go — Mitchell Hashimoto
-Go Best Practices, Six Years In — Peter Bourgon
-Just Say No to More End-to-End Tests — Google Testing Blog
-A Service Discovery Primer — Alex Ramírez
-Service Discovery at Stripe — Julia Evans
