@@ -14,7 +14,6 @@ https://docs.google.com/document/d/15G8ew0qEDqpuBTWH9YGHKhda6HaLvfKuS4pnB-CPm50/
 ---------------------------------------------------------------------------------------------------------
 # Background
 
-We started Nirmata to help businesses innovate faster by enabling the continuous delivery of software. We have been inspired by web and internet pioneers like Google, Amazon, Netflix and others. Our mission is to bring the agility achieved by these companies to all enterprises through the use of a comprehensive and fully integrated solution.
 
 When we started the design and development of our own SaaS, naturally our overarching goal was also to achieve continuous delivery for ourselves. We wanted our SaaS to have the following characteristics
 
