@@ -18,6 +18,10 @@ http://netflix.github.io/
 # http://callistaenterprise.se/blogg/teknik/2015/03/25/an-operations-model-for-microservices/
 
 ---------------------------------------------------------------------------------------------------------
+
+![http://callistaenterprise.se/assets/blogg/build-microservices-part-1/mapping-table.png](http://callistaenterprise.se/assets/blogg/build-microservices-part-1/mapping-table.png)
+
+
 # Background
 
 
