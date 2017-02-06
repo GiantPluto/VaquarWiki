@@ -11,6 +11,8 @@ http://www.simplicityitself.io/getting/started/with/microservices/2015/06/10/ser
 
 https://docs.google.com/document/d/15G8ew0qEDqpuBTWH9YGHKhda6HaLvfKuS4pnB-CPm50/mobilebasic
 
+http://netflix.github.io/
+
 # https://fernandoabcampos.wordpress.com/2016/03/16/config-server/
 
 # http://callistaenterprise.se/blogg/teknik/2015/03/25/an-operations-model-for-microservices/
