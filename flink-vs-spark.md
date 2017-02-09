@@ -22,3 +22,5 @@ http://data-artisans.com/extending-the-yahoo-streaming-benchmark/
 
 
 http://apache-flink-user-mailing-list-archive.2336050.n4.nabble.com/Benchmark-results-between-Flink-and-Spark-td1940.html
+
+http://www.slideshare.net/HadoopSummit/performance-comparison-of-streaming-big-data-platforms
