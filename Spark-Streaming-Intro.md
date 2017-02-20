@@ -51,3 +51,5 @@ Python (introduced in Spark 1.2), all of which are presented in this
 Here, we will focus on Streaming in Scala.
 
 * * * * *
+
+http://snowplowanalytics.com/blog/2015/06/10/spark-streaming-example-project-0.1.0-released/
