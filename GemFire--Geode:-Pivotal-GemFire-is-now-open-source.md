@@ -60,5 +60,11 @@ Using same application memory .
 
 ## **Client-Server Topology**
 
+Client-server caching is a deployment model that allows a large number of caches in any number of nodes
+to be connected to one another in a client-server relationship. In this configuration, client caches—GemFire
+caches at the outer edge of the hierarchy, communicate with server caches on back-end servers. Server
+caches can in turn be clients of other server caches or can replicate their data by enlisting server peers as
+mirrors. This is a fed
+
 ![](https://image.slidesharecdn.com/effectiveapplicationdevelopmentwithgemfireusingspringdatagemfire-141105113157-conversion-gate02/95/effective-application-development-with-gemfire-and-spring-data-gemfire-22-638.jpg?cb=1415188008)
 
