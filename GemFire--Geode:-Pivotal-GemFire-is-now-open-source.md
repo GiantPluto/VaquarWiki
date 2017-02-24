@@ -56,3 +56,9 @@ Using same application memory .
 
 *  It provides this functionality through highly-available, concurrent, scalable distributed data structures.
 
+
+
+## **Client-Server Topology**
+
+![](https://image.slidesharecdn.com/effectiveapplicationdevelopmentwithgemfireusingspringdatagemfire-141105113157-conversion-gate02/95/effective-application-development-with-gemfire-and-spring-data-gemfire-22-638.jpg?cb=1415188008)
+
