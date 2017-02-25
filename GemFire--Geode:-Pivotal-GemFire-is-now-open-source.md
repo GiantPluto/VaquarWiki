@@ -1,5 +1,8 @@
 #Topology:
 
+
+![](https://d1fto35gcfffzn.cloudfront.net/images/products/pivotal-gemfire/gemfire-marchitecture-diagram.png)
+
 ## **Peer-to-Peer Configuration**
 
 * In a peer-to-peer distributed system, applications can use GemFire 'mirroring' to replicate the data to other
