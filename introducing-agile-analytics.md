@@ -1,4 +1,4 @@
-* # Guiding Principles
+# Guiding Principles
 
 The core values contained in the Agile Manifesto motivate a set of guiding principles for DW/BI systems design and development. These principles often become the tiebreaker when difficult trade-off decisions must be made. Similarly, the Agile Alliance has established a set of principles for software development. The following Agile Analytics principles borrow liberally from the Agile Alliance principles:
 
