@@ -71,3 +71,10 @@ mirrors. This is a fed
 
 ![](https://image.slidesharecdn.com/effectiveapplicationdevelopmentwithgemfireusingspringdatagemfire-141105113157-conversion-gate02/95/effective-application-development-with-gemfire-and-spring-data-gemfire-22-638.jpg?cb=1415188008)
 
+
+
+
+
+* http://techiekhannotes.blogspot.com/2017/01/apachegeodegemfire-real-time-and.html
+
+* http://techiekhannotes.blogspot.com/2016/07/pivotal-gemfire-with-example_27.html
