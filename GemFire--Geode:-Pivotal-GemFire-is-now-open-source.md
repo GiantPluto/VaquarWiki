@@ -69,6 +69,10 @@ caches at the outer edge of the hierarchy, communicate with server caches on bac
 caches can in turn be clients of other server caches or can replicate their data by enlisting server peers as
 mirrors. This is a fed
 
+
+More ... http://gemfire.docs.pivotal.io/geode/topologies_and_comm/cs_configuration/chapter_overview.html 
+
+
 ![](https://image.slidesharecdn.com/effectiveapplicationdevelopmentwithgemfireusingspringdatagemfire-141105113157-conversion-gate02/95/effective-application-development-with-gemfire-and-spring-data-gemfire-22-638.jpg?cb=1415188008)
 
 
