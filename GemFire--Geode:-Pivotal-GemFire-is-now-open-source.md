@@ -76,7 +76,12 @@ More ... http://gemfire.docs.pivotal.io/geode/topologies_and_comm/cs_configurati
 ![](https://image.slidesharecdn.com/effectiveapplicationdevelopmentwithgemfireusingspringdatagemfire-141105113157-conversion-gate02/95/effective-application-development-with-gemfire-and-spring-data-gemfire-22-638.jpg?cb=1415188008)
 
 
+## Multi-site (WAN) Configuration
 
+Use the multi-site configuration to scale horizontally between disparate, loosely-coupled distributed systems. A wide-area network (WAN) is the main use case for the multi-site topology.
+
+
+![](https://image.slidesharecdn.com/vmwarevfabric5-whatsnewtechnicalsalestrainingpresentation-150728070254-lva1-app6892/95/v-mware-v-fabric-5-whats-new-technical-sales-training-presentation-19-638.jpg?cb=1438067983)
 
 
 * http://techiekhannotes.blogspot.com/2017/01/apachegeodegemfire-real-time-and.html
