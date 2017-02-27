@@ -87,3 +87,5 @@ Use the multi-site configuration to scale horizontally between disparate, loosel
 * http://techiekhannotes.blogspot.com/2017/01/apachegeodegemfire-real-time-and.html
 
 * http://techiekhannotes.blogspot.com/2016/07/pivotal-gemfire-with-example_27.html
+
+* https://www.slideshare.net/SpringCentral/effective-application-development-with-gem-fire-using-spring-data-gemfire
