@@ -1,3 +1,5 @@
+# The twelve-factor app is a methodology for building software-as-a-service apps that:
+
 ## I. Codebase
 
 One codebase tracked in revision control, many deploys
