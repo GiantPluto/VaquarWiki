@@ -4,6 +4,8 @@
 
 There is only one codebase per app, but there will be many deploys of the app. 
 
+![](https://12factor.net/images/codebase-deploys.png)
+
 ## II. Dependencies
 
 Explicitly declare and isolate dependencies
