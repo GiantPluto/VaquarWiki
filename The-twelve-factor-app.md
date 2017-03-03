@@ -62,3 +62,7 @@ The app never concerns itself with routing or storage of its output.
 ## XII. Admin processes
 
 Run admin/management tasks as one-off processes
+
+
+https://12factor.net/
+
