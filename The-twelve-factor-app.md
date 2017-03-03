@@ -2,7 +2,7 @@
 
 ## I. Codebase
 
-One codebase tracked in revision control, many deploys
+There is only one codebase per app, but there will be many deploys of the app. 
 
 ## II. Dependencies
 
