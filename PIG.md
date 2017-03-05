@@ -397,3 +397,4 @@ Pig doesn't have control structures (if, for, etc), so jobs that inherently have
 
 * http://bugra.github.io/work/notes/2014-02-09/pig-not-so-foreign-language-paper-notes/
 * http://bugra.github.io/work/notes/2014-02-08/pig-advantages-and-disadvantages/
+* http://help.mortardata.com/technologies/pig/learn_pig
