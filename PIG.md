@@ -391,3 +391,75 @@ Pig doesn't have control structures (if, for, etc), so jobs that inherently have
       # extract alias 'n_entries' from the script and get its first element
       count = float(str(stats.result("n_entries").iterator().next().get(0)))
       print 'Output %d rows' % (count,)
+
+
+-----------------------------------------------------------------------------
+
+Before Pig
+Before Pig and Hadoop, there was mighty Map-Reduce paradigm for parallellization and data processin. The overview of data processing before Pig as follows:
+
+Map-Reduce Advantages
+Scale
+Scalable due to simpler design
+Only parallelizable operations
+No transactions
+Runs on cheap commodity(cost) hardware
+Procedural control - a processing "pipe"
+Disadvantages
+Extremely rigid data flow(Map-Reduce)
+Common operations must be coded by hand(Join, filter, projection, aggregation)
+Semantics are hidden inside map-reduce functions
+Difficult to maintain, extend and optimize
+Need a high-level, general data-flow language.
+
+Automatic query optimization is hard.
+Pig Latin does not preclude optimization.
+Summary
+Big demand for parallel data processing.
+
+Emerging tools that do not look like SQL DBMS.
+Programmers like dataflow pipes over static files.
+Building a High-Level Dataflow System on Top of MapReduce
+What is Pig
+Procedural dataflow language (Pig Latin) for Map-Reduce
+Provides standard relational transforms(group, join, filter, sort)
+Schemas are optional, if used, can be part of data or specified at run time.
+User defined functions are first class of citizens of the language.
+Join implementations
+Default is symmetric, hash join
+Fragment-replicate for joining large and small inputs.
+Merge join for joining inputs sorted on join key.
+Skew join for handling inputs with significant skew in the join key.
+Hbase
+Solves appending problem in HDFS
+Low-latency query API
+rich, BigTable-style data model based on column families
+Advantages of Pig
+High Level language
+Transformations on set of records
+Process data one step at a time
+UDF's are first class citizens.
+Easier than SQL.
+Needs
+Innovation at internet companies critically depends on being able to analyze terabytes of data collected every day.
+SQL could be unnatural, and hard to follow as it declarative.
+Map-Reduce paradigm is too low-level and rigid, and leads to a great deal of custom user code that is hard to maintain, and reuse.
+Engineers who develop search engine ranking algoriths spend much of their time analyzing search logs looking for exploitable trends.
+Map-Reduce: its one input and two-stage data flow is extremely rigid.
+Pig-Latin program is a sequence of steps, much of liek in a programming language, each of which carries out a single data transformation.
+The use of such high-level primitives renders low-level manipulations (as required in map-reduce) unnecessary.
+First, Pig Latin is the programming language and Pig is the data processing environment on top of Hadoop.
+
+Pig Latin as a DataFlow Language
+User specifies a sequence of steps where each step specifies only a single, high-level data transformation.
+Nested Data Model
+Programmers often think in terms of nested data structures.
+Databases on the other hand, allows only flat tables, i.e. only atomic fields as columns.
+Why nested model is better?
+A nested data model is closer to how programmers think, and consequently much more natural to them than normalization.
+Data is often stored on disk in an inherently nested fashion.
+A nested data model also allows us to fulfill our goal of having an algebraic language where each step carries out only a single data transformation.
+A nested data model allows programmers to easily write a rich set of user-defined functions.
+UDFs
+All aspects of processing in Pig Latin can be customized through User Defined Functions.
+
