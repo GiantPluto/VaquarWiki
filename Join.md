@@ -10,7 +10,6 @@
 ![](http://hortonworks.com/wp-content/uploads/2013/05/sqlcompat2.png)
 
 
-![](https://image.slidesharecdn.com/hwx-130916165617-phpapp02/95/hive-functions-cheat-sheet-2-638.jpg?cb=1379350843)
 
 ![](https://image.slidesharecdn.com/hwx-130916165617-phpapp02/95/hive-functions-cheat-sheet-2-638.jpg?cb=1379350843)
 
