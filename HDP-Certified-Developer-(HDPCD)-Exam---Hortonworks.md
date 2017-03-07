@@ -22,5 +22,7 @@
 * https://github.com/BigDataRepublic/hdp-installation-notes
 * https://github.com/hortonworks/hadoop-tutorials
 * https://hortonworks.com/wp-content/uploads/2014/05/TeradataHortonworks_Datalake_White-Paper_20140410.pdf
+
 ----------------------------------------------------------------------
+
 * https://github.com/vaquarkhan/hadoop-tutorials
