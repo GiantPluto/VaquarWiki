@@ -1,3 +1,7 @@
+* https://hadoopist.wordpress.com/2014/12/02/hortonworks-certification-guidelines-2/
+
+------------------------------------------------------------------------
+
 * https://dzone.com/articles/preparing-for-hadoop-certification-with-hortonwork
 * http://hortonworks.com/wp-content/uploads/2016/03/CertDataSheet-HDPCD_2.4.pdf
 * http://hortonworks.com/wp-content/uploads/2015/02/DataSheet_HDPCD_2.21.pdf
