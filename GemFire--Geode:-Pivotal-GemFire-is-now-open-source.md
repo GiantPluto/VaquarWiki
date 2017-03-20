@@ -91,3 +91,34 @@ Use the multi-site configuration to scale horizontally between disparate, loosel
 * https://www.slideshare.net/SpringCentral/effective-application-development-with-gem-fire-using-spring-data-gemfire
 
 * http://www.gemstone.com/pdf/GemFire_Architecture.pdf
+
+-----------------------------------------------------------------------------------------------
+
+### Gemfire Components and Functionality
+
+
+Locator	: A locator process that shows how the ports are selected
+
+Server Cache nodes: 	A standalone data server or clustered server that includes listeners and continuous queries
+
+Cache Client: 	A standalone client program that has local cache
+
+Continuous Query Clients: 	A standalone client program that receives call backs when data changes in certain regions
+
+WAN Gatway: 	A cluster node that could be used to replicate data to another site. It currently logs batch data inserts and updates as they become available from the cluster nodes.
+
+Cache Listener: 	A component that runs in the server that logs listener events
+
+Cache Loader:	Two examples, one that just logs when there is a cache miss and the other that is configured to load cache misses form the demo H2 database.
+
+Cache Writer (write-through): 	Two examples, one that just logs when data changes in the cache and can be written some backend system. The other is configured to write to a DB when data is saved.
+
+Replicated regions: 	Gemfire regions where the data is replicated across all nodes
+
+JmxAgent: 	A JMXAgent wrapper that lets it be run in the same way as the other components.
+
+Disk write-through persistence(?)	: One of the regions is configured for disk based persistence
+
+Disk write-behind: 	hooks demonstrated via WAN gateway and a wan gateway listener
+
+The @cacheable annotation:	One of the commands and regions is dedicated the @cacheable annotation. See the "power" command
