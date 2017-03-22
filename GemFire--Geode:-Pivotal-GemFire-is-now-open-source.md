@@ -128,12 +128,10 @@ The @cacheable annotation:	One of the commands and regions is dedicated the @cac
 
 ### GemFire implements the following types of regions:
 
-* • Replicated - Data is replicated across all cache members that define the region. This provides very high read performance but writes take longer to perform the replication.
+* Replicated - Data is replicated across all cache members that define the region. This provides very high read performance but writes take longer to perform the replication.
 
-* • Partioned - Data is partitioned into buckets among cache members that define the region. This provides high read and write performance and is suitable for very large data sets that are too big for a single node.
+* Partioned - Data is partitioned into buckets among cache members that define the region. This provides high read and write performance and is suitable for very large data sets that are too big for a single node.
 
-* • Local - Data only exists on the local node.
+* Local - Data only exists on the local node.
 
-* • Client - Technically a client region is a local region that acts as a proxy to a replicated or partitioned region hosted on cache servers. It may hold data created or fetched locally.
-
-Alternately, it can be empty. Local updates are synchronized to the cache server. Also, a client region may subscribe to events in order to stay synchronized with changes originating from remote processes that access the same region.
+* Client - Technically a client region is a local region that acts as a proxy to a replicated or partitioned region hosted on cache servers. It may hold data created or fetched locally.Alternately, it can be empty. Local updates are synchronized to the cache server. Also, a client region may subscribe to events in order to stay synchronized with changes originating from remote processes that access the same region.
