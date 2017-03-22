@@ -130,8 +130,7 @@ The @cacheable annotation:	One of the commands and regions is dedicated the @cac
 
 * • Replicated - Data is replicated across all cache members that define the region. This provides very high read performance but writes take longer to perform the replication.
 
-* • Partioned - Data is partitioned into buckets among cache members that define the region. This provides high read and write performance and is suitable for very large data sets that are too
-* big for a single node.
+* • Partioned - Data is partitioned into buckets among cache members that define the region. This provides high read and write performance and is suitable for very large data sets that are too big for a single node.
 
 * • Local - Data only exists on the local node.
 
