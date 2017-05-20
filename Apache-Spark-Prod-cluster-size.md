@@ -1,12 +1,12 @@
-ADP
+A
 5 data nodes - Each node of 250 GB ram
 --------------------------------------
 
-CITI 
+C
 32 GB and cluster size 64 GB
 --------------------------------------
+B
 
-HSBC
 --------------------------------------
 hortonworks:
 
