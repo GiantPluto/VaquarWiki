@@ -9,22 +9,23 @@ Employees table has a nullable column. To express it in terms of statically type
 
 **Tables:**
 
-val employees = sc.parallelize(Array[(String, Option[Int])](
-  ("Rafferty", Some(31)), ("Jones", Some(33)), ("Heisenberg", Some(33)), ("Robinson", Some(34)), ("Smith", Some(34)), ("Williams", null)
-)).toDF("LastName", "DepartmentID")
+   val employees = sc.parallelize(Array[(String, Option[Int])](
+     ("Rafferty", Some(31)), ("Jones", Some(33)), ("Heisenberg", Some(33)), ("Robinson", Some(34)), ("Smith", Some(34)), 
+    ("Williams", null)
+    )).toDF("LastName", "DepartmentID")
 
 employees.show()
 
-+----------+------------+
-|  LastName|DepartmentID|
-+----------+------------+
-|  Rafferty|          31|
-|     Jones|          33|
-|Heisenberg|          33|
-|  Robinson|          34|
-|     Smith|          34|
-|  Williams|        null|
-+----------+------------+
+   +----------+------------+
+   |  LastName|DepartmentID|
+   +----------+------------+
+   |  Rafferty|          31|
+   |     Jones|          33|
+   |Heisenberg|          33|
+   |  Robinson|          34|
+   |     Smith|          34|
+   |  Williams|        null|
+   +----------+------------+
 
 
 Department table does not have nullable columns, type specification could be omitted.
