@@ -7,6 +7,8 @@
 
 Employees table has a nullable column. To express it in terms of statically typed Scala, one needs to use Option type.
 
+**Tables:**
+
 val employees = sc.parallelize(Array[(String, Option[Int])](
   ("Rafferty", Some(31)), ("Jones", Some(33)), ("Heisenberg", Some(33)), ("Robinson", Some(34)), ("Smith", Some(34)), ("Williams", null)
 )).toDF("LastName", "DepartmentID")
@@ -23,6 +25,8 @@ employees.show()
 |     Smith|          34|
 |  Williams|        null|
 +----------+------------+
+
+
 Department table does not have nullable columns, type specification could be omitted.
 
 val departments = sc.parallelize(Array(
@@ -40,7 +44,9 @@ departments.show()
 |          34|      Clerical|
 |          35|     Marketing|
 +------------+--------------+
-Inner join
+
+
+**Inner join**
 Following SQL code
 
 SELECT *
@@ -53,6 +59,7 @@ employees
   .join(departments, "DepartmentID")
   .show()
 
+
 +------------+----------+--------------+
 |DepartmentID|  LastName|DepartmentName|
 +------------+----------+--------------+
@@ -62,9 +69,11 @@ employees
 |          34|  Robinson|      Clerical|
 |          34|     Smith|      Clerical|
 +------------+----------+--------------+
+
+
 Beautiful, is not it? Spark automatically removes duplicated “DepartmentID” column, so column names are unique and one does not need to use table prefix to address them.
 
-Left outer join
+**Left outer join**
 Left outer join is a very common operation, especially if there are nulls or gaps in a data. Note, that column name should be wrapped into scala Seq if join type is specified.
 
 employees
@@ -81,7 +90,10 @@ employees
 |          34|     Smith|      Clerical|
 |        null|  Williams|          null|
 +------------+----------+--------------+
-Other join types
+
+
+**Other join types**
+
 Spark allows using following join types: inner, outer, left_outer, right_outer, leftsemi. The interface is the same as for left outer join in the example above.
 
 For cartesian join column specification should be omitted:
@@ -104,6 +116,8 @@ employees
 |Heisenberg|          33|          31|         Sales|
 |Heisenberg|          33|          33|   Engineering|
 +----------+------------+------------+--------------+
+
+
 only showing top 10 rows
 Warning: do not use cartesian join with big tables in production.
 
@@ -127,6 +141,8 @@ products.show()
 |steak|2000-01-02|2020-01-01|  180|
 | fish|1990-01-01|2020-01-01|  100|
 +-----+----------+----------+-----+
+
+
 There are two products only: steak and fish, price of steak has been changed once. Another table consists of product orders by day:
 
 val orders = sc.parallelize(Array(
@@ -144,6 +160,8 @@ orders.show()
 |2000-01-01|   fish|
 |2005-01-01|  steak|
 +----------+-------+
+
+
 Our goal is to assign an actual price for every record in the orders table. It is not obvious to do using only equality operators, however, spark join expression allows us to achieve the result in an elegant way:
 
 orders
@@ -157,6 +175,8 @@ orders
 |1995-01-01|  steak|steak|1990-01-01|2000-01-01|  150|
 |2005-01-01|  steak|steak|2000-01-02|2020-01-01|  180|
 +----------+-------+-----+----------+----------+-----+
+
+
 This technique is very useful, yet not that common. It could save a lot of time for those who write as well as for those who read the code.
 
 Inner join using non primary keys
@@ -170,6 +190,7 @@ df.show()
 df.join(df, "c1").show()
 
 // Original DataFrame
+
 +---+
 | c1|
 +---+
@@ -179,6 +200,7 @@ df.join(df, "c1").show()
 +---+
 
 // Self-joined DataFrame
+
 +---+
 | c1|
 +---+
@@ -188,10 +210,6 @@ df.join(df, "c1").show()
 |  1|
 |  1|
 +---+
+
+
 Note, that size of the result DataFrame is bigger than the source size. It could be as big as n2, where n is a size of source.
-
-Conclusion
-The article covered different join types implementations with Apache Spark, including join expressions and join on non-unique keys.
-
-Apache Spark allows developers to write the code in the way, which is easier to understand. It improves code quality and maintainability.
-
