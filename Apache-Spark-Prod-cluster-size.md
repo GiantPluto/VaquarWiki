@@ -6,6 +6,7 @@ C
 32 GB and cluster size 64 GB
 --------------------------------------
 B
+Executor memory 8gb, driver memory 5gb, executor core 1 and num executors 5
 
 --------------------------------------
 hortonworks:
