@@ -78,5 +78,5 @@ To be on the safe side, always use accumulators inside actions ONLY.
 
 * https://www.tutorialspoint.com/apache_spark/advanced_spark_programming.htm
 
-
+* https://stackoverflow.com/questions/29494452/when-are-accumulators-truly-reliable
 
