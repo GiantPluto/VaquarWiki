@@ -53,7 +53,30 @@ Methods available include count(), mean(), sum(), max(), min(), variance(), samp
 
 These are in addition to the more complex statistical and machine learning methods we will be covered Chapter  11.
 
-**REFERENCE**
+**Caveats**
+
+When using accumulators there are some caveats that we as programmers need to be aware of,
+
+Computations inside transformations are evaluated lazily, so unless an action happens on an RDD the transformationsare not executed. As a result of this, accumulators used inside functions like map() or filter() wont get executed unless some action happen on the RDD.
+Spark guarantees to update accumulators inside actionsonly once. So even if a task is restarted and the lineage is recomputed, the accumulators will be updated only once.
+Spark does not guarantee this for transformations. So if a task is restarted and the lineage is recomputed, there are chances of undesirable side effects when the accumulators will be updated more than once.
+To be on the safe side, always use accumulators inside actions ONLY.
+
+----------------------------------------------------------------------------------------------
+
+    scala> val accum = sc.accumulator(0)
+
+    scala> sc.parallelize(Array(1, 2, 3, 4)).foreach(x => accum += x)
+ 
+     scala> accum.value
+ 
+--------------------------------------------------------------------------------------------
+
+* http://spark.apache.org/docs/latest/programming-guide.html#accumulators
+
+* https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/spark-accumulators.html
+
+* https://www.tutorialspoint.com/apache_spark/advanced_spark_programming.htm
 
 
 
