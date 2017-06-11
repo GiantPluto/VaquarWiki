@@ -3,13 +3,16 @@
 * https://stackoverflow.com/questions/40522149/spark-sql-implement-and-condition-inside-a-case-statement
 
 
-    df.registerTempTable("data")
-    val df4 = sql(""" select *, case when color = 'green' then 1 else 0 end as Green_ind from data """)
+      df.registerTempTable("data")
+      
+      val df4 = sql(""" select *, case when color = 'green' then 1 else 0 end as Green_ind from data """)
 
-   SELECT CASE WHEN key = 1 THEN 1 ELSE 2 END FROM testData
+     SELECT CASE WHEN key = 1 THEN 1 ELSE 2 END FROM testData
 
      print(s"Spark ${spark.version}")
-     val df = spark.createDataFrame(Seq(( 2,  9), ( 1,  5),( 1,  1),( 1,  2),( 2,  8)))
+    
+      
+    val df = spark.createDataFrame(Seq(( 2,  9), ( 1,  5),( 1,  1),( 1,  2),( 2,  8)))
               .toDF("y", "x")
       df.createOrReplaceTempView("test")
  
