@@ -92,7 +92,7 @@ Let’s understand about transitive dependency scope with a simple table. In thi
 
 ------------------------------------------------------------------------------------
 
-compile	   -        provided	runtime	      test
+**compile	   -        provided	runtime	      test**
 
 ------------------------------------------------------------------------------------
 
