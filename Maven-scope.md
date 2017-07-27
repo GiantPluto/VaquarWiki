@@ -91,13 +91,23 @@ When you include a maven dependency and it has it’s own other dependencies (i.
 Let’s understand about transitive dependency scope with a simple table. In this table, if a dependency is set to the scope in the left column, transitive dependencies at top row will result in a dependency with the scope listed at their intersection.
 
 ------------------------------------------------------------------------------------
+
 compile	   -        provided	runtime	      test
+
 ------------------------------------------------------------------------------------
+
 compile	  compile	–	runtime   	–
+
 ------------------------------------------------------------------------------------
+
 provided  provided	–	provided	–
+
 ------------------------------------------------------------------------------------
+
 runtime	  runtime	–	runtime	        –
+
 ------------------------------------------------------------------------------------
+
 test	  test	        –	test	        –
+
 ------------------------------------------------------------------------------------
