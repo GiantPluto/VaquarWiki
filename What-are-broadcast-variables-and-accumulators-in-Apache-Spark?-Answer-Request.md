@@ -3,6 +3,7 @@ Broadcast is a read-only global variable, which all nodes of a cluster can read.
 On the other hand think of accumulators as a global counter variable where each node of the cluster can write values in to. These are the variables that you want to keep updating as a part of your operation like for example while reading log lines, one would like to maintain a real time count of number of certain log type records identified.
 
 
+-------------------------------------------------------------------
 
 **BROADCAST VARIABLE:**
 
