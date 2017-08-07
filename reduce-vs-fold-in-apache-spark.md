@@ -19,3 +19,6 @@ Moreover there is no difference in the overall processing model:
 
 
 
+https://issues.apache.org/jira/browse/SPARK-6416
+
+https://issues.apache.org/jira/browse/SPARK-7683
