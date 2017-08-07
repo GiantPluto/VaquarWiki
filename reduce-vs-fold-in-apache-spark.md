@@ -41,3 +41,25 @@ byPartition.reduce((p, v) => (p + v * v))
 returns 97
 
 Important thing to note is that results can differ from run to run depending on an order in which partitions are combined.
+
+-----------------------------------------------
+
+fold and reduce both aggregate over a collection by implementing an operation you specify, the major different is the starting point of the aggregation. For fold(), you have to specify the starting value, and for reduce() the starting value is the first (or possibly an arbitrary) element in the collection. 
+
+Simple examples - we can sum the numbers in a collection using both functions: 
+
+     (1 until 10).reduce( (a,b) => a+b ) 
+     (1 until 10).fold(0)( (a,b) => a+b ) 
+
+With fold, we want to start at 0 and cumulatively add each element. In this case, the operation passed to fold() and reduce() were very similar, but it is helpful to think about fold in the following way. For the operation we pass to fold(), imagine its two arguments are (i) the current accumulated value and (ii) the next value in the collection, 
+
+     (1 until 10).fold(0)( (accumulated_so_far, next_value) => accumulated_so_far + next_value ). 
+
+So the result of the operation, accumulated_so_far + next_value, will be passed to the operation again as the first argument, and so on. 
+
+In this way, we could count the number of elements in a collection using fold, 
+
+        (1 until 10).fold(0)( (accumulated_so_far, next_value) => accumulated_so_far + 1 ). 
+
+
+When it comes to Spark, here’s another thing to keep in mind. For both reduce and fold, you need to make sure your operation is both commutative and associative. For RDDs, reduce and fold are implemented on each partition separately, and then the results are combined using the operation.  With fold, this could get you into trouble because an empty partition will emit fold’s starting value, so the number of partitions might erroneously affect the result of the calculation, if you’re not careful about the operation. This would occur with the ( (a,b) => a+1) operation from above (see http://stackoverflow.com/questions/29150202/pyspark-fold-method-output). 
