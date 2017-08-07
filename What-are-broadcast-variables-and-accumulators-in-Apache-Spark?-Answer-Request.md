@@ -17,7 +17,7 @@ broadcast variables are:
 
 ------------------------------------------------------
 
-ACCUMULATOR VARIABLE:
+**ACCUMULATOR VARIABLE:**
 
 Accumulators are Spark’s answer to Map-reduce counters but they do much more than that. Let’s first start with a simple example which uses accumulators for simple count.
 
