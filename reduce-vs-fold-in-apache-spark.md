@@ -22,3 +22,22 @@ Moreover there is no difference in the overall processing model:
 https://issues.apache.org/jira/browse/SPARK-6416
 
 https://issues.apache.org/jira/browse/SPARK-7683
+
+---------------------------------------------
+
+Aggregate the elements of each partition, and then the results for all the partitions, using a given associative and commutative function and a neutral "zero value". The function op(t1, t2) is allowed to modify t1 and return it as its result value to avoid object allocation; however, it should not modify t2.
+
+This behaves somewhat differently from fold operations implemented for non-distributed collections in functional languages like Scala. This fold operation may be applied to partitions individually, and then fold those results into the final result, rather than apply the fold to each element sequentially in some defined ordering. For functions that are not commutative, the result may differ from that of a fold applied to a non-distributed collection.
+To illustrate what is going on lets try to simulate what is going on step by step:
+
+            val rdd = sc.parallelize(Array(2., 3.))
+
+            val byPartition = rdd.mapPartitions(
+            iter => Array(iter.fold(0.0)((p, v) => (p +  v * v))).toIterator).collect()
+
+It gives us something similar to this Array[Double] = Array(0.0, 0.0, 0.0, 4.0, 0.0, 0.0, 0.0, 9.0) and
+
+byPartition.reduce((p, v) => (p + v * v))
+returns 97
+
+Important thing to note is that results can differ from run to run depending on an order in which partitions are combined.
