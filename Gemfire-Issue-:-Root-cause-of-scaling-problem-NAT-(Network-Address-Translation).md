@@ -15,9 +15,11 @@ Moreover, TCP timestamp values are generated pseudo-randomly, so each device on 
 **How to fix it?**
 
 $ sysctl net.ipv4.tcp_tw_recycle
+
 net.ipv4.tcp_tw_recycle = 1  
 
 Modify the value for the configuration in the file to 0. You need to have root access to do that.
+
 $ cat /etc/sysctl.conf | grep tcp_tw_recycle
 
 net.ipv4.tcp_tw_recycle = 0
