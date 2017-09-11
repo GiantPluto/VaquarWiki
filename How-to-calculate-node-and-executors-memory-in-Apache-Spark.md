@@ -20,9 +20,17 @@ If we have following hardware then calculate spark
 * -For max HDFS throughput
 * Cluster has 6*15 =90 cores in total
 * afer taking out Hadoop /Yarn daemon cores)
-* 90 cores /5 cores/executor
+* 90 cores /5 cores/executor  (19/5=18-1)
 * =18 executors
 * Each node has 3 executors
 * 63 GB/3 =21 GB ,21*(1 -0,07)
 * ~19 GB
 * 1 executor for AM=> 17 executor
+
+------------------------------------------------
+Ans 
+
+* 17 Executors in total
+* 19 GB memory /executor
+* 5 cores  /executor
+
