@@ -33,4 +33,6 @@ Ans
 * 17 Executors in total
 * 19 GB memory /executor
 * 5 cores  /executor
-
+------------------------------------------------
+* Dynamic resources allocation in production not recommended as you already aware your requirements and resources.
+* Dynamic allocation you can use in before pro to play
