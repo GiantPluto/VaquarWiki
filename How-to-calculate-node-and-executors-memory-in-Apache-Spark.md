@@ -46,5 +46,11 @@ Ans
 *  If partition less but near 2000 bump to more than 2000 (Spark hardcoded value is 2000 for compress )
 
 ------------------------------------------------
+* Shuffles are t be avoided 
+* Cross Join should be avoided
+* ReduceByKey over GroupByKey
+* TreesReduce over Reduce
+* Use complex/Nested type 
+------------------------------------------------
 
 https://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-2/
