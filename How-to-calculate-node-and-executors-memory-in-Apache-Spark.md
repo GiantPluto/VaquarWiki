@@ -14,6 +14,10 @@ If we have following hardware then calculate spark
 * 15 cores per executer can lead to bad HDFS I/O throughput.
 * Best is to keep under 5 cores per executor
 ------------------------------------------------
+
+![](http://blog.cloudera.com/wp-content/uploads/2015/03/spark-tuning2-f1.png)
+
+
 **Calculations:**
 
 * 5 core per executor
