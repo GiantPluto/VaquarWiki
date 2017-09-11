@@ -40,3 +40,9 @@ Ans
 ------------------------------------------------
 * Dynamic resources allocation in production not recommended as you already aware your requirements and resources.
 * Dynamic allocation you can use in before pro to play
+
+------------------------------------------------
+
+
+
+https://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-2/
