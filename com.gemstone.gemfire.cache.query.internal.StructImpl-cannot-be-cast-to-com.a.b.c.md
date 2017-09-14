@@ -1,0 +1,1 @@
+https://discuss.pivotal.io/hc/en-us/articles/206439627-ClassCastException-when-Hot-Deploy-Application-JARs
