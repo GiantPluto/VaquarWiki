@@ -62,7 +62,7 @@ Spring :
       gfsh> destroy index --region=/exampleRegion
 
 -------------------------------------------------------------------------------
-**Creating Key Indexes **
+**Key Indexes **
 
 When data is partitioned using a key or a field value
 
@@ -83,5 +83,32 @@ Tere are two issues to note with key indexes:
 The key index is not sorted. Without sorting, you can only do equality tests. Other comparisons are not possible. To obtain a sorted index on your primary keys, create a functional index on the attribute used as the primary key.
 The query service is not automatically aware of the relationship between the region values and keys. For this, you must create the key index.
 
+
+**Hash Indexes**
+
+GemFire supports the creation of hash indexes for the purposes of performing **equality-based queries**.
+
+The performance of put operations when using a hash index should be comparable to other indexes or slightly slower. Queries themselves are expected to be slightly slower due to the implementation of hash index and the cost of recalculating the key on request, which is the trade-off for the space savings that using a hash index provides.
+
+
+You can only use hash indexes with equals and not equals queries.
+Hash index maintenance will be slower than the other indexes due to synchronized add methods.
+Hash indexes cannot be maintained asynchronously. If you attempt to create a hash index on a region with asynchronous set as the maintenance mode, an exception will be thrown.
+You cannot use hash indexes for queries with multiple iterators or nested collections.
+
+
+      gfsh> create index --name=myHashIndex --expression=mktValue --region=/exampleRegion
+
+
+      <region name=exampleRegion>
+         <region-attributes . . . >
+      </region-attributes>
+      <index name="myHashIndex" from-clause="/exampleRegion p" expression="p.mktValue" type="hash"/>
+       ...
+     </region>
+
+
+
+**Map Indexes**
 
 
