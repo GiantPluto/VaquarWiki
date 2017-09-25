@@ -111,4 +111,32 @@ You cannot use hash indexes for queries with multiple iterators or nested collec
 
 **Map Indexes**
 
+To assist with the quick lookup of multiple values in a Map (or HashMap) type field, you can create an index (sometimes referred to as a “map index”) on specific (or all) keys in that field.
 
+To assist with the quick lookup of multiple values in a Map (or HashMap) type field, you can create an index (sometimes referred to as a “map index”) on specific (or all) keys in that field.
+
+For example, you could create a map index to support the following query:
+
+     SELECT * FROM /users u WHERE u.name['first'] = 'John' OR u.name['last'] = 'Smith'
+
+
+The map index extends regular range indexes created on single key by maintaining indexes for other specified keys, or for all keys if * is used. The underlying structure of the map index can be thought of as a wrapper around all these indexes.
+
+The following Java code samples provide examples of how to create a map index:
+
+      QueryService qs = cache.getQueryService();
+ 
+     //This will create indexes for for keys 'PVTL' and 'VMW'
+     qs.createIndex("indexName", "p.positions['PVTL', 'VMW']", "/portfolio p");
+     QueryService qs = cache.getQueryService();
+
+    //This will create indexes for all keys
+    qs.createIndex("indexName", "p.positions[*]", "/portfolio p");
+
+In gfsh, the equivalents are:
+
+    gfsh>create index --name="IndexName" --expression="p.positions['PVTL', 'VMW']" --region="/portfolio p"
+
+    gfsh>create index --name="IndexName" --expression="p.positions[*]" --region="/portfolio p"
+
+In order to create or query a map index, you must use the bracket notation to list the map field keys you wish to index or query. For example: [*], ['keyX1','keyX2’]. Note that using p.pos.get('keyX1') will not create or query the map index.
