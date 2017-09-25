@@ -32,6 +32,11 @@ If we have following hardware then calculate spark
 * 1 executor for AM=> 17 executor
 
 ------------------------------------------------
+
+![](https://0x0fff.com/wp-content/uploads/2016/01/Spark-Memory-Management-1.6.0-768x808.png)
+
+
+
 Ans 
 
 * 17 Executors in total
