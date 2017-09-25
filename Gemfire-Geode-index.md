@@ -13,6 +13,7 @@ If you are creating multiple indexes on the same region, first define your index
 
 * Whenever possible, provide a hint to allow the query engine to prefer a specific index. See Using Query Index Hints
 
+-------------------------------------------------------------------------------
 
 **Create Index Example :**
 
@@ -50,3 +51,14 @@ Spring :
     <gfe:index id="myIndex" expression="someField" from="/someRegion"/>
 
 
+
+**Listing and remove Indexes**
+
+      gfsh> list indexes
+      gfsh> list indexes --with-stats
+
+      gfsh> destroy index
+      gfsh> destroy index --name=myIndex
+      gfsh> destroy index --region=/exampleRegion
+
+-------------------------------------------------------------------------------
