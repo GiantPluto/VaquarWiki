@@ -63,7 +63,7 @@ Spring :
 
 -------------------------------------------------------------------------------
 
-**Key Indexes **
+**Key Indexes**
 
 When data is partitioned using a key or a field value
 
