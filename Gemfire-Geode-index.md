@@ -62,3 +62,26 @@ Spring :
       gfsh> destroy index --region=/exampleRegion
 
 -------------------------------------------------------------------------------
+**Creating Key Indexes **
+
+When data is partitioned using a key or a field value
+
+    create index --name=myKeyIndex --expression=id --region=/exampleRegion
+
+xml:
+
+    <region name=exampleRegion>
+      <region-attributes . . . >
+    </region-attributes>
+     <index name="myKeyIndex" from-clause="/exampleRegion" expression="id" key-index="true"/>
+    ...
+    </region>
+
+
+Tere are two issues to note with key indexes:
+
+The key index is not sorted. Without sorting, you can only do equality tests. Other comparisons are not possible. To obtain a sorted index on your primary keys, create a functional index on the attribute used as the primary key.
+The query service is not automatically aware of the relationship between the region values and keys. For this, you must create the key index.
+
+
+
