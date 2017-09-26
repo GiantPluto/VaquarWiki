@@ -25,3 +25,11 @@ Replicated regions cannot use a parallel gateway sender.
 
 
 ![](https://gemfire.docs.pivotal.io/geode/images/parallel_sender.png)
+
+
+**Gateway Sender Queues**
+
+The queue that a gateway sender uses to distribute events to a remote site overflows to disk as needed, in order to prevent the Geode member from running out of memory. You can configure the maximum amount of memory that each queue uses, as well as the batch size and frequency for processing batches in the queue. You can also configure these queues to persist to disk,
+
+
+By default gateway sender queues use 5 threads to dispatch queued events. With a serial gateway sender, the single, logical queue that is hosted on a member is divided into multiple physical queues (5 by default) each with a dedicated dispatcher thread.
