@@ -106,4 +106,101 @@ With this hybrid topology, if site 2 went down, it would not affect communicatio
          </region-attributes>
 
 
+Note: In addition to configuring regions with gateway senders to distribute events, you must configure the same regions in the target clusters to apply the distributed events. The region name in the receiving cluster must exactly match the region name in the sending cluster.
+
+
+
 **Configure Gateway Receivers**
+
+Note: You can only host one gateway receiver per member.
+
+
+          gfsh>create gateway-receiver --start-port=1530 --end-port=1551 
+
+         <cache>
+                       <gateway-receiver start-port="1530" end-port="1551" hostname-for-senders="gateway1.mycompany.com" manual-start="false" /> 
+
+     </cache>
+
+
+
+Example :+1: 
+
+
+ example, assume the following scenario:
+
+start 1 receiver in site ny
+start 4 senders in site ln
+start 3 additional receiver in NY
+You can then execute the following in gfsh to see the effects of rebalancing:
+
+gfsh -e "connect --locator=localhost[10331]" -e "list gateways"
+...
+(2) Executing - list gateways
+
+Gateways
+
+GatewaySender
+
+GatewaySender Id |              Member               | Remote Cluster Id |   Type   | Status  | Queued Events | Receiver Location
+---------------- | --------------------------------- | ----------------- | -------- | ------- | ------------- | -----------------
+ln               | boglesbymac(ny-1:88641)<v2>:33491 | 2                 | Parallel | Running | 0             | boglesbymac:5037
+ln               | boglesbymac(ny-2:88705)<v3>:29329 | 2                 | Parallel | Running | 0             | boglesbymac:5064
+ln               | boglesbymac(ny-3:88715)<v4>:36808 | 2                 | Parallel | Running | 0             | boglesbymac:5132
+ln               | boglesbymac(ny-4:88724)<v5>:52993 | 2                 | Parallel | Running | 0             | boglesbymac:5324
+
+GatewayReceiver
+
+             Member               | Port | Sender Count | Sender's Connected
+--------------------------------- | ---- | ------------ | --------------------------------------------------------------------------
+boglesbymac(ny-1:88641)<v2>:33491 | 5057 | 24           | ["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]
+boglesbymac(ny-2:88705)<v3>:29329 | 5082 | 0            | []
+boglesbymac(ny-3:88715)<v4>:36808 | 5371 | 0            | []
+boglesbymac(ny-4:88724)<v5>:52993 | 5247 | 0            | []
+Execute the load-balance command:
+
+gfsh -e "connect --locator=localhost[10441]" -e "load-balance gateway-sender --id=ny"...
+
+(2) Executing - load-balance gateway-sender --id=ny
+
+             Member               | Result | Message
+--------------------------------- | ------ |--------------------------------------------------------------------------
+boglesbymac(ln-1:88651)<v2>:48277 | OK     | GatewaySender ny is rebalanced on member boglesbymac(ln-1:88651)<v2>:48277
+boglesbymac(ln-4:88681)<v5>:42784 | OK     | GatewaySender ny is rebalanced on member boglesbymac(ln-4:88681)<v5>:42784
+boglesbymac(ln-3:88672)<v4>:43675 | OK     | GatewaySender ny is rebalanced on member boglesbymac(ln-3:88672)<v4>:43675
+boglesbymac(ln-2:88662)<v3>:12796 | OK     | GatewaySender ny is rebalanced on member boglesbymac(ln-2:88662)<v3>:12796
+Listing gateways in ny again shows the connections are spread much better among the receivers.
+
+gfsh -e "connect --locator=localhost[10331]" -e "list gateways"...
+
+(2) Executing - list gateways
+
+Gateways
+
+GatewaySender
+
+GatewaySender Id |              Member               | Remote Cluster Id |  Type    | Status  | Queued Events | Receiver Location
+---------------- | --------------------------------- |  ---------------- | -------- | ------- | ------------- | -----------------
+ln               | boglesbymac(ny-1:88641)<v2>:33491 | 2                 | Parallel | Running | 0             | boglesbymac:5037
+ln               | boglesbymac(ny-2:88705)<v3>:29329 | 2                 | Parallel | Running | 0             | boglesbymac:5064
+ln               | boglesbymac(ny-3:88715)<v4>:36808 | 2                 | Parallel | Running | 0             | boglesbymac:5132
+ln               | boglesbymac(ny-4:88724)<v5>:52993 | 2                 | Parallel | Running | 0             | boglesbymac:5324
+
+GatewayReceiver
+
+         Member                   | Port | Sender Count | Sender's Connected
+--------------------------------- | ---- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------
+boglesbymac(ny-1:88641)<v2>:33491 | 5057 | 9            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675","boglesbymac(ln-2:88662)<v3>:12796"]
+boglesbymac(ny-2:88705)<v3>:29329 | 5082 | 4            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
+boglesbymac(ny-3:88715)<v4>:36808 | 5371 | 4            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
+boglesbymac(ny-4:88724)<v5>:52993 | 5247 | 3            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
+Running the load balance command in site ln again produces even better balance.
+
+         Member                   | Port | Sender Count | Sender's Connected
+--------------------------------- | ---- | ------------ |-------------------------------------------------------------------------------------------------------------------------------------------------
+boglesbymac(ny-1:88641)<v2>:33491 | 5057 | 7            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]
+boglesbymac(ny-2:88705)<v3>:29329 | 5082 | 3            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-3:88672)<v4>:43675","boglesbymac(ln-2:88662)<v3>:12796"]
+boglesbymac(ny-3:88715)<v4>:36808 | 5371 | 5            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]
+boglesbymac(ny-4:88724)<v5>:52993 | 5247 | 6            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]
+
+
