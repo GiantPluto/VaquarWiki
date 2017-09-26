@@ -34,7 +34,7 @@ The queue that a gateway sender uses to distribute events to a remote site overf
 
 By default gateway sender queues use 5 threads to dispatch queued events. With a serial gateway sender, the single, logical queue that is hosted on a member is divided into multiple physical queues (5 by default) each with a dedicated dispatcher thread.
 
-**NOTE **
+**NOTE**
 
 1. When a serial gateway sender configuration is deployed to multiple Geode members, only one “primary” sender is active at a given time. All other serial gateway sender instances are inactive “secondaries” that are available as backups if the primary sender shuts down. Geode designates the first gateway sender to start up as the primary sender, and all other senders become secondaries. As gateway senders start and shut down in the distributed system, Geode ensures that the oldest running gateway sender operates as the primary.
 
