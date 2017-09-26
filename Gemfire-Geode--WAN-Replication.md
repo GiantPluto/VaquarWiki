@@ -41,3 +41,24 @@ By default gateway sender queues use 5 threads to dispatch queued events. With a
 2. A parallel gateway sender is deployed to multiple Geode members by default, and each member that hosts primary buckets for a partitioned region actively distributes data to the remote Geode site. When you use parallel gateway senders, high availability for WAN distribution is provided if you configure the partitioned region for redundancy. With a redundant partitioned region, if a member that hosts primary buckets fails or is shut down, then a Geode member that hosts a redundant copy of those buckets takes over WAN distribution for those buckets.
 
 
+**Fully Connected Mesh Topology**
+
+![](https://gemfire.docs.pivotal.io/geode/images/multisite-topology-parallel.png)
+
+Fully connected mesh with three sites is shown in this figure. In this scenario, if site 1 sends an update to site 2, site 2 forwards to site 3. If site 1 sends an update to sites 2 and 3, neither forwards to the other. This is likewise true for any other initiating site. If any site is removed, the remaining two are still fully connected.
+
+
+**Ring Topology**
+
+![](https://gemfire.docs.pivotal.io/geode/images/multisite-topology-serial.png)
+
+
+**Hybrid Multi-site Topology**
+
+![](https://gemfire.docs.pivotal.io/geode/images/multisite-topology-hybrid-1.png)
+
+
+With this hybrid topology, if site 2 went down, it would not affect communication between sites 1 and 3. If site 3 went down, however, site 2 would not be able to send to site 1.
+
+![](https://gemfire.docs.pivotal.io/geode/images/multisite-topology-hybrid-2.png)
+
