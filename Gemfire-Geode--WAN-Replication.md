@@ -40,6 +40,8 @@ By default gateway sender queues use 5 threads to dispatch queued events. With a
 
 2. A parallel gateway sender is deployed to multiple Geode members by default, and each member that hosts primary buckets for a partitioned region actively distributes data to the remote Geode site. When you use parallel gateway senders, high availability for WAN distribution is provided if you configure the partitioned region for redundancy. With a redundant partitioned region, if a member that hosts primary buckets fails or is shut down, then a Geode member that hosts a redundant copy of those buckets takes over WAN distribution for those buckets.
 
+----------------------------------------------------------------------------------
+
 
 **Fully Connected Mesh Topology**
 
@@ -62,3 +64,46 @@ With this hybrid topology, if site 2 went down, it would not affect communicatio
 
 ![](https://gemfire.docs.pivotal.io/geode/images/multisite-topology-hybrid-2.png)
 
+----------------------------------------------------------------------------------
+
+**Configure Gateway Senders**
+
+     gfsh>create gateway-sender --id="sender2" --parallel=true --remote-distributed-system-id="2"
+
+     gfsh>create gateway-sender --id="sender3" --parallel=true --remote-distributed-system-id="3"
+
+
+
+
+
+     <cache>
+            <gateway-sender id="sender2" parallel="true"   remote-distributed-system-id="2"/> 
+            <gateway-sender id="sender3" parallel="true"    remote-distributed-system-id="3"/> 
+  
+     </cache>
+
+
+
+--maximum-queue-memory=150
+--enable-persistence=true 
+--disk-store-name=cluster2Store
+--dispatcher-threads=2 
+--order-policy=partition
+
+
+         gfsh>create gateway-sender --id=sender2 --parallel=true --remote-distributed-system-id=2 --manual-start=true
+
+
+
+**Create Data Regions for Multi-site Communication**
+
+
+           gfsh>create region --name=customer --gateway-sender-id=sender2,sender3
+
+
+
+         <region-attributes gateway-sender-ids="sender2,sender3">
+         </region-attributes>
+
+
+**Configure Gateway Receivers**
