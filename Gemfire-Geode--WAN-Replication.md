@@ -33,3 +33,4 @@ The queue that a gateway sender uses to distribute events to a remote site overf
 
 
 By default gateway sender queues use 5 threads to dispatch queued events. With a serial gateway sender, the single, logical queue that is hosted on a member is divided into multiple physical queues (5 by default) each with a dedicated dispatcher thread.
+
