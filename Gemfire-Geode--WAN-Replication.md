@@ -186,6 +186,9 @@ ln               | boglesbymac(ny-2:88705)<v3>:29329 | 2                 | Paral
 ln               | boglesbymac(ny-3:88715)<v4>:36808 | 2                 | Parallel | Running | 0             | boglesbymac:5132
 ln               | boglesbymac(ny-4:88724)<v5>:52993 | 2                 | Parallel | Running | 0             | boglesbymac:5324
 
+
+GatewayReceiver
+
 GatewayReceiver
 
          Member                   | Port | Sender Count | Sender's Connected
@@ -194,7 +197,9 @@ boglesbymac(ny-1:88641)<v2>:33491 | 5057 | 9            |["boglesbymac(ln-1:8865
 boglesbymac(ny-2:88705)<v3>:29329 | 5082 | 4            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
 boglesbymac(ny-3:88715)<v4>:36808 | 5371 | 4            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
 boglesbymac(ny-4:88724)<v5>:52993 | 5247 | 3            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-3:88672)<v4>:43675"]
+
 Running the load balance command in site ln again produces even better balance.
+
 
          Member                   | Port | Sender Count | Sender's Connected
 --------------------------------- | ---- | ------------ |-------------------------------------------------------------------------------------------------------------------------------------------------
