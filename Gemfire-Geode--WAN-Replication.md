@@ -124,6 +124,9 @@ Note: You can only host one gateway receiver per member.
 
 
 
+
+
+
 ---------------------------------------------------------------------
 
 https://cwiki.apache.org/confluence/display/GEODE/GemFire+Multi-site+%28WAN%29+Architecture
