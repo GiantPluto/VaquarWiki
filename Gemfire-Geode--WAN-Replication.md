@@ -124,31 +124,6 @@ Note: You can only host one gateway receiver per member.
 
 
 
-Example :+1: 
-
-
- example, assume the following scenario:
-
-start 1 receiver in site ny
-start 4 senders in site ln
-start 3 additional receiver in NY
-You can then execute the following in gfsh to see the effects of rebalancing:
-
-gfsh -e "connect --locator=localhost[10331]" -e "list gateways"
-...
-(2) Executing - list gateways
-
-Gateways
-
-GatewaySender
-
-GatewaySender Id |              Member               | Remote Cluster Id |   Type   | Status  | Queued Events | Receiver Location
----------------- | --------------------------------- | ----------------- | -------- | ------- | ------------- | -----------------
-ln               | boglesbymac(ny-1:88641)<v2>:33491 | 2                 | Parallel | Running | 0             | boglesbymac:5037
-ln               | boglesbymac(ny-2:88705)<v3>:29329 | 2                 | Parallel | Running | 0             | boglesbymac:5064
-ln               | boglesbymac(ny-3:88715)<v4>:36808 | 2                 | Parallel | Running | 0             | boglesbymac:5132
-ln               | boglesbymac(ny-4:88724)<v5>:52993 | 2                 | Parallel | Running | 0             | boglesbymac:5324
-
 ---------------------------------------------------------------------
 
 
