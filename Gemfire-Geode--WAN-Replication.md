@@ -209,11 +209,4 @@ G`atewayReceiver`
 Running the load balance command in site ln again produces even better balance.
 
 
-`         Member                   | Port | Sender Count | Sender's Connected`
-`--------------------------------- | ---- | ------------ |-------------------------------------------------------------------------------------------------------------------------------------------------`
-`boglesbymac(ny-1:88641)<v2>:33491 | 5057 | 7            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]`
-`boglesbymac(ny-2:88705)<v3>:29329 | 5082 | 3            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-3:88672)<v4>:43675","boglesbymac(ln-2:88662)<v3>:12796"]`
-`boglesbymac(ny-3:88715)<v4>:36808 | 5371 | 5            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]`
-`boglesbymac(ny-4:88724)<v5>:52993 | 5247 | 6            |["boglesbymac(ln-1:88651)<v2>:48277","boglesbymac(ln-4:88681)<v5>:42784","boglesbymac(ln-2:88662)<v3>:12796","boglesbymac(ln-3:88672)<v4>:43675"]`
-
 
