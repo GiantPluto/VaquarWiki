@@ -67,3 +67,8 @@ https://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-2
 
 
 * https://0x0fff.com/spark-memory-management/
+
+
+
+
+![](https://mapr.com/blog/resource-allocation-configuration-spark-yarn/assets/blogimages/Reallocation-Blog-Img3.png)
