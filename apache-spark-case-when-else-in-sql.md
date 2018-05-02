@@ -1,6 +1,3 @@
-* https://stackoverflow.com/questions/30783517/apache-spark-add-an-case-when-else-calculated-column-to-an-existing-d
-* https://stackoverflow.com/questions/37064315/how-to-write-case-with-when-condition-in-spark-sql-using-scala
-* https://stackoverflow.com/questions/40522149/spark-sql-implement-and-condition-inside-a-case-statement
 
 Example 1:
 
@@ -41,3 +38,10 @@ Example 2:
          |Green|        0|
          | Blue|        0|
          +-----+---------+
+
+
+
+* https://stackoverflow.com/questions/30783517/apache-spark-add-an-case-when-else-calculated-column-to-an-existing-d
+* https://stackoverflow.com/questions/37064315/how-to-write-case-with-when-condition-in-spark-sql-using-scala
+* https://stackoverflow.com/questions/40522149/spark-sql-implement-and-condition-inside-a-case-statement
+
