@@ -23,11 +23,11 @@ Example 2:
 
 
 
-df4:org.apache.spark.sql.DataFrame = [color: string, Green_ind: integer]
-+-----+---------+
-|color|Green_ind|
-+-----+---------+
-|  Red|        0|
-|Green|        0|
-| Blue|        0|
-+-----+---------+
+       df4:org.apache.spark.sql.DataFrame = [color: string, Green_ind: integer]
+         +-----+---------+
+         |color|Green_ind|
+         +-----+---------+
+         |  Red|        0|
+         |Green|        0|
+         | Blue|        0|
+         +-----+---------+
