@@ -10,8 +10,7 @@
      SELECT CASE WHEN key = 1 THEN 1 ELSE 2 END FROM testData
 
      print(s"Spark ${spark.version}")
-    
-      
+         
     val df = spark.createDataFrame(Seq(( 2,  9), ( 1,  5),( 1,  1),( 1,  2),( 2,  8)))
               .toDF("y", "x")
       df.createOrReplaceTempView("test")
