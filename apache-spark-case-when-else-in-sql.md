@@ -19,3 +19,15 @@ Example 2:
      df.createOrReplaceTempView("data")
      val df4 = sql(""" select *, case when color = 'green' then 1 else 0 end as Green_ind from data """)
      df4.show()
+
+
+
+
+df4:org.apache.spark.sql.DataFrame = [color: string, Green_ind: integer]
++-----+---------+
+|color|Green_ind|
++-----+---------+
+|  Red|        0|
+|Green|        0|
+| Blue|        0|
++-----+---------+
