@@ -11,6 +11,7 @@ Estimator works by abstracting a learning algorithm concept or any other algorit
 ![](https://static.wixstatic.com/media/4c8fd9_d511bc0df5bb4e0f952193b18e69f618~mv2.png/v1/fill/w_688,h_176,al_c,usm_0.66_1.00_0.01/4c8fd9_d511bc0df5bb4e0f952193b18e69f618~mv2.png)
 
 * Parameter: All Transformers and Estimators now share a common API for specifying parameters.Spark ML API is param is the uniform API to specify parameters for estimators and transformers. It contains self-contained documentation and is a named parameter. A ParamMap represents a set of (parameter, value) pairs. You can pass parameters to an algorithm using two methods.The first method is by setting parameters for instance. For example, you can call the given method for LogisticRegression’s instance lr. This will make lr.fit() use at most ten iterations. This type of API is similar to the API used in MLlib.The other method is by passing a ParamMap to transform () or fit (). All parameters in this ParamMap will override the parameters that have been formerly specified using setter methods.
+
 Note that parameters are related to the specific instances of transformers and estimators.
 
 
