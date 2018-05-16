@@ -8,6 +8,8 @@ Estimator works by abstracting a learning algorithm concept or any other algorit
 * Pipeline: A Pipeline chains multiple Transformers and Estimators together to specify an ML workflow.
  Pipeline running an algorithms sequence for processing and learning from data is common in machine learning. 
 
+![](https://static.wixstatic.com/media/4c8fd9_d511bc0df5bb4e0f952193b18e69f618~mv2.png/v1/fill/w_688,h_176,al_c,usm_0.66_1.00_0.01/4c8fd9_d511bc0df5bb4e0f952193b18e69f618~mv2.png)
+
 * Parameter: All Transformers and Estimators now share a common API for specifying parameters.
 
 
