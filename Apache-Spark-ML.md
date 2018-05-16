@@ -26,5 +26,5 @@ Spark ML Algo :
 
 * https://spark.apache.org/docs/preview/ml-guide.html
 * https://dzone.com/articles/distingish-pop-music-from-heavy-metal-using-apache
-
+* https://mapr.com/blog/apache-spark-machine-learning-tutorial/
 
