@@ -9,3 +9,17 @@ Estimator works by abstracting a learning algorithm concept or any other algorit
  Pipeline running an algorithms sequence for processing and learning from data is common in machine learning. 
 
 * Parameter: All Transformers and Estimators now share a common API for specifying parameters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://dzone.com/articles/distingish-pop-music-from-heavy-metal-using-apache
