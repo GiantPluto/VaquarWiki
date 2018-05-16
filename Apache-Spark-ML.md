@@ -17,9 +17,11 @@ Note that parameters are related to the specific instances of transformers and e
 
 
 
+Spark ML Algo :
 
+![](https://www.safaribooksonline.com/library/view/spark-for-python/9781784399696/graphics/B03986_04_02.jpg)
 
-
+![](https://image.slidesharecdn.com/machinelearningwithspark-mahedikaysar-161023205800/95/large-scale-machine-learning-with-spark-32-638.jpg?cb=1477256850)
 
 
 
