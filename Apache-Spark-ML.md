@@ -24,5 +24,5 @@ Spark ML Algo :
 ![](https://image.slidesharecdn.com/machinelearningwithspark-mahedikaysar-161023205800/95/large-scale-machine-learning-with-spark-32-638.jpg?cb=1477256850)
 
 
-
-https://dzone.com/articles/distingish-pop-music-from-heavy-metal-using-apache
+* https://spark.apache.org/docs/preview/ml-guide.html
+* https://dzone.com/articles/distingish-pop-music-from-heavy-metal-using-apache
