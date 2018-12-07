@@ -1,9 +1,18 @@
-## indexes can increase read performance and decrease write performance.
+## Indexes can increase read performance and decrease write performance.
 
-The index itself occupies space on disk and memory (when used). So, if space or memory are issues then too many indexes could be a problem. When data is inserted/updated/deleted, then the index needs to be maintained as well as the original data. This slows down updates and locks the tables (or parts of the tables), which can affect query processing.
+The index itself occupies space on disk and memory (when used). So, if space or memory are issues or expensive then too many indexes could be a problem. When data is inserted/updated/deleted, then the index needs to be maintained as well as the original data. This slows down updates and locks the tables (or parts of the tables), which can affect query processing.
 
 A small number of indexes on each table are reasonable. These should be designed with the typical query load in mind. If you index every column in every table, then data modifications would slow down. If your data is static, then this is not an issue. However, eating up all the memory with indexes could be an issue.
 
+In perfect world, you'd like to index columns, that appear in WHERE clause or JOIN condition,If the keys of your index and filters in your query are not selective enough, then the index will be ignored (regardless of what's in your INCLUDE columns).
+
+Every index you create has overhead for INSERT and UPDATE statements; more so for "bigger" indexes. (Bigger applies to INCLUDE columns as well.)
+
+So while you could in theory create a multitude of big indexes with include columns to match all the permutations of access paths: it would be very counter-productive.
+
+## Guidelines for choosing columns for composite indexes
+
+Consider creating a composite index on columns that are frequently used together in WHERE clause conditions combined with AND operators, especially if their combined selectivity is better than the selectivity of either column individually. Consider indexing columns that are used frequently to join tables in SQL statements.
 
 
 ## Creating Key Indexes
