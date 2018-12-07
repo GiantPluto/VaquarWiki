@@ -15,6 +15,14 @@ So while you could in theory create a multitude of big indexes with include colu
 Consider creating a composite index on columns that are frequently used together in WHERE clause conditions combined with AND operators, especially if their combined selectivity is better than the selectivity of either column individually. Consider indexing columns that are used frequently to join tables in SQL statements.
 
 
+* Better Selectivity:
+	Sometimes two or more columns, each with poor selectivity, can be combined to form a composite index with good selectivity.
+
+* Adding Data Storage:
+	If all the columns selected by the query are in the composite index return these values from the index without accessing the table. However in this case, it's better to use an IOT (Index Only Table).
+
+
+
 ## Creating Key Indexes
 
 Creating a key index is a good way to improve query performance when data is partitioned using a key or a field value.
