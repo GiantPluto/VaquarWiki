@@ -26,6 +26,8 @@ There are two issues to note with key indexes:
 * The query service is not automatically aware of the relationship between the region values and keys. For this, you must create the key index.
 Note: Using a key-index with an explicit type=‘range’ in the cache.xml will lead to an exception. Key indexes will not be used in 'range’ queries.
 
+> create index --name=test_Index --expression=test_Index --type=range --region=/test_region
+
 
 ## Map index (Range)
 
