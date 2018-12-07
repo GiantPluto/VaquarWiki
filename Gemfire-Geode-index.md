@@ -1,1 +1,0 @@
-Gemfire Geode index
