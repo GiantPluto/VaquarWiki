@@ -1,0 +1,5 @@
+- https://www.youtube.com/watch?v=KWjgiNgDfwI
+- https://github.com/awslabs/aws-serverless-auth-reference-app
+- https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
+- https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-lambda-authorizer-output.html
+- https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints/tree/master/blueprints
