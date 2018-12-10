@@ -10,12 +10,18 @@ Amazon Cognito Federated Identities enables developers to create unique identiti
 ![](https://cdn-images-1.medium.com/max/2000/0*K8WD5xbeXBnHezfT.)
 
 
+## Setup User pool:
+
+
+
+
 
 
 -------------------------------------------------------------------
 
 
 - https://www.youtube.com/watch?v=KWjgiNgDfwI
+- https://www.youtube.com/watch?v=aKn081SFBJU
 - https://github.com/awslabs/aws-serverless-auth-reference-app
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-lambda-authorizer-output.html
