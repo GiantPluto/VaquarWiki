@@ -174,6 +174,13 @@ xml:
 In order to create or query a map index, you must use the bracket notation to list the map field keys you wish to index or query. For example: [*], ['keyX1','keyX2’]. Note that using p.pos.get('keyX1') will not create or query the map index.
 
 
+----------------------------------------------------
 
+## Referance 
 
 - https://gemfire.docs.pivotal.io/93/geode/developing/query_index/query_index.html
+- https://gemfire.docs.pivotal.io/96/geode/developing/query_index/creating_map_indexes.html
+- https://gemfire.docs.pivotal.io/96/geode/tools_modules/lucene_integration.html
+- https://gemfire.docs.pivotal.io/96/geode/developing/partitioned_regions/colocating_partitioned_region_data.html
+- https://gemfire.docs.pivotal.io/96/geode/developing/function_exec/chapter_overview.html
+
