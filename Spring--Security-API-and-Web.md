@@ -5,9 +5,6 @@ Below are a few additional samples to get you up and running quickly
 
 Sample Web Security Spring Java Config
 ----------------------
-
-See [SampleWebSecurityConfigurerAdapterTests.groovy](src/test/groovy/org/springframework/security/config/annotation/web/SampleWebSecurityConfigurerAdapterTests.groovy)
-
 The following configuration
 
 ```java
