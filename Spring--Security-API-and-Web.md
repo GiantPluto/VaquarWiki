@@ -1,5 +1,6 @@
 Web Security Samples
 ======================
+- https://github.com/eugenp/tutorials/tree/master/spring-security-mvc-boot
 
 Below are a few additional samples to get you up and running quickly
 
