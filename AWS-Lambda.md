@@ -10,7 +10,7 @@
 - https://www.youtube.com/watch?v=y_whCBFKlj0
 - https://www.youtube.com/watch?v=IiWyPb389UU
 - https://gist.github.com/fcavalcantirj
-
+- https://stackoverflow.com/questions/43954325/why-does-my-jwt-token-from-amazon-cognito-have-an-invalid-signature
 
 -----------------------------
 VK-PRE-SIGNUP-Lambda
