@@ -13,6 +13,7 @@
 - https://stackoverflow.com/questions/43954325/why-does-my-jwt-token-from-amazon-cognito-have-an-invalid-signature
 - https://aws.amazon.com/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
 - https://community.blackboard.com/thread/4359-using-postman-to-try-out-the-rest-apis
+- https://www.youtube.com/watch?v=VZqG7HjT2AQ&t=2169s
 
 -----------------------------
 VK-PRE-SIGNUP-Lambda
