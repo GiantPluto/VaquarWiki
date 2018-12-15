@@ -11,6 +11,7 @@
 - https://www.youtube.com/watch?v=IiWyPb389UU
 - https://gist.github.com/fcavalcantirj
 - https://stackoverflow.com/questions/43954325/why-does-my-jwt-token-from-amazon-cognito-have-an-invalid-signature
+- https://aws.amazon.com/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
 
 -----------------------------
 VK-PRE-SIGNUP-Lambda
