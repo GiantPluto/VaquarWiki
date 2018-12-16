@@ -14,6 +14,12 @@
 - https://aws.amazon.com/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
 - https://community.blackboard.com/thread/4359-using-postman-to-try-out-the-rest-apis
 - https://www.youtube.com/watch?v=VZqG7HjT2AQ&t=2169s
+- https://www.youtube.com/watch?v=_UiyIJqDXXQ
+
+## cognito 
+- https://www.youtube.com/watch?v=KWjgiNgDfwI
+
+
 
 -----------------------------
 VK-PRE-SIGNUP-Lambda
