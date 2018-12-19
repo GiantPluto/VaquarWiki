@@ -16,6 +16,7 @@ Click “Change” in the HTTPS row, “SSL Certificate” column
 Click “Upload a certificate to IAM” radio button
 
 - https://knackforge.com/blog/vishnu/aws-elastic-load-balancer-godaddy-ssl
+- https://stoitschev.de/2018/09/10/enable-elastic-beanstalk-for-https-with-a-load-balancer/
 ------------------------------------------------------
 
 ## Route 53 
