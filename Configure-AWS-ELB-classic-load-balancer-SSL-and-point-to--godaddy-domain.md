@@ -15,6 +15,7 @@ Click the “Listeners” tab
 Click “Change” in the HTTPS row, “SSL Certificate” column
 Click “Upload a certificate to IAM” radio button
 
+- https://aws.amazon.com/blogs/security/easier-certificate-validation-using-dns-with-aws-certificate-manager/
 - https://knackforge.com/blog/vishnu/aws-elastic-load-balancer-godaddy-ssl
 - https://stoitschev.de/2018/09/10/enable-elastic-beanstalk-for-https-with-a-load-balancer/
 ------------------------------------------------------
