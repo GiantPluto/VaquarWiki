@@ -42,7 +42,7 @@ Add the Amazon NameSpaceServers in Control panel of Domain Provider.
 * Then type your domain name in the browser and you will be redirected to your website if you follow the entire setup perfectly.
 
 
-
+- https://www.youtube.com/watch?v=v4RBlFOrOjA
 - https://stackoverflow.com/questions/11602232/how-to-link-godaddy-domain-with-aws-elastic-beanstalk-environment
 - https://blog.vizuri.com/setting-up-godaddy-and-route53-with-ghost-blogger
 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-beanstalk-environment.html
