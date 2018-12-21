@@ -1,0 +1,1 @@
+- https://web.archive.org/web/20131014101143/http://blog.chrissom.com/dev/bitbucket-as-a-maven-repository.html
