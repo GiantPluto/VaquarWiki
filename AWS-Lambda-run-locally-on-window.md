@@ -11,6 +11,8 @@
 
 - https://aws.amazon.com/blogs/developer/testing-lambda-functions-using-the-aws-toolkit-for-eclipse/
 
+- https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/tke-sam-local.html
+
 ### Lambda function:
 
 - https://www.youtube.com/watch?v=QRSc1dL-I4U
