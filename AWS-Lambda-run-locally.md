@@ -7,6 +7,8 @@
 
 - https://dzone.com/articles/aws-sam-local-test-serverless-application-locally
 
+- https://aws.amazon.com/blogs/developer/testing-lambda-functions-using-the-aws-toolkit-for-eclipse/
+
 ### Lambda function:
 
 - https://www.youtube.com/watch?v=QRSc1dL-I4U
