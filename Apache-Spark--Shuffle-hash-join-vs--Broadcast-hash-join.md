@@ -28,6 +28,6 @@ Example :
 
    
    
-https://github.com/jaceklaskowski/mastering-apache-spark-book/blob/master/spark-sql-joins-broadcast.adoc
-   
-https://www.youtube.com/watch?v=fp53QhSfQcI   
+- https://github.com/jaceklaskowski/mastering-apache-spark-book/blob/master/spark-sql-joins-broadcast.adoc
+- https://www.youtube.com/watch?v=fp53QhSfQcI   
+- https://books.google.com/books/about/High_Performance_Spark.html?id=90glDwAAQBAJ
