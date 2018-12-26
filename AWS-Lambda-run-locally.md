@@ -3,6 +3,8 @@
 ### Local run lambda on window
 - https://aws.amazon.com/blogs/developer/aws-toolkit-for-eclipse-locally-debug-your-lambda-functions-and-api-gateway/?sc_channel=sm&sc_campaign=Launch_Campaign&sc_publisher=TWITTER&sc_country=Global&sc_geo=GLOBAL&sc_outcome=awareness&trk=_TWITTER&sc_content=eclipse-sam-local&sc_category=AWS_Lambda&linkId=46057040
 
+- https://blog.rowanudell.com/getting-started-with-aws-sam-local/
+
 ### Lambda function:
 
 - https://www.youtube.com/watch?v=QRSc1dL-I4U
