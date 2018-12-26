@@ -7,7 +7,7 @@ Authorizers are the first line of defense to secure API , AWS cognito pool allow
 
 -----------------------------------------------------------------------------------------
 
-## AWS cognito:
+## AWS Cognito:
 
 Pros
 
@@ -20,7 +20,7 @@ Cons
 Need to use AWS SDK specifically on client side. Programmers have to add this into their toolchain and make use if it during development. Adds extra complexity.
 Fine grained access control for resources is not really required since the only access that is required is for API gateway.
 
-## Custom authorizer
+## Custom Lambda authorizer
 
 Pros
 
