@@ -1,3 +1,12 @@
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0.
+
+Authorizers are the first line of defense to secure API , AWS cognito pool allowed you to use following two different type of authorizers.
+
+1. Cognito Authorizers
+2. Custom Lambda authorizer
+
+-----------------------------------------------------------------------------------------
+
 ## AWS cognito:
 
 Pros
