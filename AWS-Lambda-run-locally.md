@@ -5,6 +5,8 @@
 
 - https://blog.rowanudell.com/getting-started-with-aws-sam-local/
 
+- https://dzone.com/articles/aws-sam-local-test-serverless-application-locally
+
 ### Lambda function:
 
 - https://www.youtube.com/watch?v=QRSc1dL-I4U
