@@ -17,6 +17,7 @@ sam local start-api
 
 - https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/tke-sam-local.html
 
+- https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/aws-tke-ug.pdf
 ### Lambda function:
 
 - https://video.twimg.com/tweet_video/DSzQujfWAAAQGej.mp4
