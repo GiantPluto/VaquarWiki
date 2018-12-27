@@ -5,6 +5,8 @@ Authorizers are the first line of defense to secure API , AWS cognito pool allow
 1. Cognito Authorizers
 2. Custom Lambda authorizer
 
+![Alt Text](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2017/09/27/Screen-Shot-2017-09-13-at-10.13.18-AM-215x300.png)
+
 
 AWS introduced a new type of authorizer in Amazon API Gateway, enhanced request authorizers. Previously, custom authorizers received only the bearer token included in the request and the ARN of the API Gateway method being called. Enhanced request authorizers receive all of the headers, query string, and path parameters as well as the request context. This enables you to make more sophisticated authorization decisions based on parameters such as the client IP address, user agent, or a query string parameter alongside the client bearer token.
 
