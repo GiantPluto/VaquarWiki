@@ -122,3 +122,4 @@ Above notes i have created using  aws doc,image and following links
 - https://aws.amazon.com/blogs/compute/using-enhanced-request-authorizers-in-amazon-api-gateway/
 - https://dzone.com/articles/reuse-authorizers-across-aws-apis
 - https://stackoverflow.com/questions/40656761/custom-authorizer-vs-cognito-authentication-for-amazon-api-gateway-web-appli
+- https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers/part-3
