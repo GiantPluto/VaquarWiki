@@ -3,10 +3,12 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 ![Alt Text](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/custom-auth-workflow.png)
 
 
-Authorizers are the first line of defense to secure API , AWS cognito pool allowed you to use following two different type of authorizers.
+##### Amazon Cognito has three type of authorizer 
 
-1. Cognito Authorizers
-2. Custom Lambda authorizer
+1. Amazon Cognito user pool                  - User pool authorizer.
+2. Amazon Cognito federated identities       - AWS IAM Authorization.
+3. Custom identity providers                 - Custom Autorizer
+
 
 ![Alt Text](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2017/09/27/Screen-Shot-2017-09-13-at-10.13.18-AM-215x300.png)
 
