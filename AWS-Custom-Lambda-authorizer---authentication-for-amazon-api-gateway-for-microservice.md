@@ -116,6 +116,8 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 
 [Control a Lambda Function of a Lambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html#api-gateway-lambda-authorizer-types)
 
+-----------------------------------------------------------------------------------------
+
 
 ![Alt Text](https://cdn-images-1.medium.com/max/1000/1*b46gRLzVry1kr8ikUOrXMg.jpeg)
 
