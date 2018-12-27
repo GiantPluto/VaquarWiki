@@ -13,47 +13,47 @@ So Authorizers can use token and request.
 
 Token-based lambda authorizers receive the below object as its event to process the authorization request:
 
-`{`
-   `"type":"TOKEN",`
-   `"authorizationToken":"<caller-supplied-token>",`
-   `"methodArn":"arn:aws:execute-api:<regionId>:<accountId>:<apiId>/<stage>/<method>/<resourcePath>"`
-`}`
+     `{`
+         `"type":"TOKEN",`
+         `"authorizationToken":"<caller-supplied-token>",`
+         `"methodArn":"arn:aws:execute-api:<regionId>:<accountId>:<apiId>/<stage>/<method>/<resourcePath>"`
+       `}`
 
 
 For request-based lambda authorizers, lambda receives the event object as below:
 
-`{`
-   `"type":"REQUEST",`
-   `"methodArn":"arn:aws:execute-api:us-east-1:xxxx:xxxx/test/GET/request",`
-   `"resource":"/request",`
-   `"path":"/request",`
-   `"httpMethod":"GET",`
-   `"headers":{`
-      `...`
-   `},`
-   `"queryStringParameters":{`
-      `"QueryString1":"queryValue1"`
-   `},`
-   `"pathParameters":{`
-   `},`
-   `"stageVariables":{`
-      `"StageVar1":"stageValue1"`
-   `},`
-   `"requestContext":{`
-      `"path":"/request",`
-      `"accountId":"xxxxx",`
-      `"resourceId":"xxxx",`
-      `"stage":"test",`
-      `"requestId":"...",`
-      `"identity":{`
+     `{`
+         `"type":"REQUEST",`
+         `"methodArn":"arn:aws:execute-api:us-east-1:xxxx:xxxx/test/GET/request",`
+         `"resource":"/request",`
+        `"path":"/request",`
+        `"httpMethod":"GET",`
+        `"headers":{`
+         `...`
+         `},`
+         `"queryStringParameters":{`
+         `"QueryString1":"queryValue1"`
+         `},`
+         `"pathParameters":{`
+         `},`
+          `"stageVariables":{`
+          `"StageVar1":"stageValue1"`
+         `},`
+        `"requestContext":{`
+         `"path":"/request",`
+         `"accountId":"xxxxx",`
+         `"resourceId":"xxxx",`
+         `"stage":"test",`
+         `"requestId":"...",`
+        `"identity":{`
          `"apiKey":"...",`
          `"sourceIp":"..."`
-      `},`
-      `"resourcePath":"/request",`
-      `"httpMethod":"GET",`
-      `"apiId":"xxxx"`
-   `}`
-`}`
+         `},`
+         `"resourcePath":"/request",`
+         `"httpMethod":"GET",`
+         `"apiId":"xxxx"`
+         `}`
+      `}`
 
 
 
