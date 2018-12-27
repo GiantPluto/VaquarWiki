@@ -7,7 +7,7 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 3. Custom Lambda identity providers                 - Custom Autorizer
 
 
-Custom Lambda identity providers has two different options.
+##### Custom Lambda identity providers has two different options.
 1. Token
 2. Request    
 
