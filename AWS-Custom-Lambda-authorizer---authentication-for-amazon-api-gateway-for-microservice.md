@@ -151,3 +151,4 @@ Above notes i have created using  aws doc,image and following links
 - https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers/part-3
 - https://blog.codecentric.de/en/2018/04/aws-lambda-authorizer/
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/call-api-with-api-gateway-lambda-authorization.html
+- https://www.slideshare.net/AmazonWebServices/security-best-practices-for-serverless-applications-july-2017-aws-online-tech-talks
