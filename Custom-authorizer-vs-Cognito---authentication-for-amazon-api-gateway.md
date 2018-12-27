@@ -106,8 +106,10 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 
 
 
+-----------------------------------------------------------------------------------------------------
 
 Above notes i have created using  aws doc,image and following links
+
 -------------------------------------------------------------------------------------------------------
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
 - https://blog.codecentric.de/en/2018/04/aws-lambda-authorizer/
