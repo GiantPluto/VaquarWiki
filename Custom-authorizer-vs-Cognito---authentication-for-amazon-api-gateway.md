@@ -85,6 +85,9 @@ Fine grained access control for resources is not really required since the only 
 
 ## Custom Lambda authorizer
 
+An API Authorizer is a Lambda function that performs authentication and authorization on requests prior to AWS API Gateway execution. The Lambda returns an IAM policy that either permits or blocks the API requests that contain a particular authorization token. The returning IAM policy is then cached by the API Gateway so it can be later reused for up to 1 hour.
+
+
 Pros
 
 You can have your authentication mechanism the way you want it. Ultimate control over authentication and authorization.
