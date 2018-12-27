@@ -8,6 +8,54 @@ Authorizers are the first line of defense to secure API , AWS cognito pool allow
 
 AWS introduced a new type of authorizer in Amazon API Gateway, enhanced request authorizers. Previously, custom authorizers received only the bearer token included in the request and the ARN of the API Gateway method being called. Enhanced request authorizers receive all of the headers, query string, and path parameters as well as the request context. This enables you to make more sophisticated authorization decisions based on parameters such as the client IP address, user agent, or a query string parameter alongside the client bearer token.
 
+So Authorizers can use token and request.
+
+
+Token-based lambda authorizers receive the below object as its event to process the authorization request:
+
+`{`
+   `"type":"TOKEN",`
+   `"authorizationToken":"<caller-supplied-token>",`
+   `"methodArn":"arn:aws:execute-api:<regionId>:<accountId>:<apiId>/<stage>/<method>/<resourcePath>"`
+`}`
+
+
+For request-based lambda authorizers, lambda receives the event object as below:
+
+`{`
+   `"type":"REQUEST",`
+   `"methodArn":"arn:aws:execute-api:us-east-1:xxxx:xxxx/test/GET/request",`
+   `"resource":"/request",`
+   `"path":"/request",`
+   `"httpMethod":"GET",`
+   `"headers":{`
+      `...`
+   `},`
+   `"queryStringParameters":{`
+      `"QueryString1":"queryValue1"`
+   `},`
+   `"pathParameters":{`
+   `},`
+   `"stageVariables":{`
+      `"StageVar1":"stageValue1"`
+   `},`
+   `"requestContext":{`
+      `"path":"/request",`
+      `"accountId":"xxxxx",`
+      `"resourceId":"xxxx",`
+      `"stage":"test",`
+      `"requestId":"...",`
+      `"identity":{`
+         `"apiKey":"...",`
+         `"sourceIp":"..."`
+      `},`
+      `"resourcePath":"/request",`
+      `"httpMethod":"GET",`
+      `"apiId":"xxxx"`
+   `}`
+`}`
+
+
 
 -----------------------------------------------------------------------------------------
 
@@ -47,4 +95,5 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 - https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints/blob/master/blueprints/java/src/io/TokenAuthorizerContext.java
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
 - https://aws.amazon.com/blogs/compute/using-enhanced-request-authorizers-in-amazon-api-gateway/
+- https://dzone.com/articles/reuse-authorizers-across-aws-apis
 - https://stackoverflow.com/questions/40656761/custom-authorizer-vs-cognito-authentication-for-amazon-api-gateway-web-appli
