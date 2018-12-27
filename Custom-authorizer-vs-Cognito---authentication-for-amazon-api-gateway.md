@@ -105,7 +105,7 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 
 
 
-
+- https://markpollmann.com/lambda-authorizer/
 -----------------------------------------------------------------------------------------------------
 
 Above notes i have created using  aws doc,image and following links
