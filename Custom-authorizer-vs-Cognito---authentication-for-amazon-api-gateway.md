@@ -16,6 +16,9 @@ AWS introduced a new type of authorizer in Amazon API Gateway, enhanced request 
 So Authorizers can use token and request.
 
 
+TOKEN type Lambda authorizers grant a caller permissions to invoke a given request using an authorization token passed in a header. The token could be, for example, an OAuth token.
+
+
 Token-based lambda authorizers receive the below object as its event to process the authorization request:
 
      `{`
@@ -24,6 +27,9 @@ Token-based lambda authorizers receive the below object as its event to process 
          `"methodArn":"arn:aws:execute-api:<regionId>:<accountId>:<apiId>/<stage>/<method>/<resourcePath>"`
        `}`
 
+
+
+REQUEST type Lambda authorizers grant a caller permissions to invoke a given request using request parameters, including headers, query strings, stage variables, or context parameters.
 
 For request-based lambda authorizers, lambda receives the event object as below:
 
