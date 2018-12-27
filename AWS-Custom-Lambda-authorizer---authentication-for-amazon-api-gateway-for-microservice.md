@@ -1,8 +1,5 @@
 Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0.
 
-![Alt Text](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/custom-auth-workflow.png)
-
-
 ##### Amazon Cognito has three type of authorizer 
 
 1. Amazon Cognito user pool                  - User pool authorizer.
@@ -77,9 +74,15 @@ For request-based lambda authorizers, lambda receives the event object as below:
 
 
 -----------------------------------------------------------------------------------------
-Cognito vs Custom lambda authorizer pros and cons 
 
-## AWS Cognito:
+![Alt Text](https://docs.aws.amazon.com/apigateway/latest/developerguide/images/custom-auth-workflow.png)
+
+-----------------------------------------------------------------------------------------
+
+
+## Cognito vs Custom lambda authorizer pros and cons 
+
+### AWS Cognito:
 
 Pros
 
@@ -92,7 +95,7 @@ Cons
 Need to use AWS SDK specifically on client side. Programmers have to add this into their toolchain and make use if it during development. Adds extra complexity.
 Fine grained access control for resources is not really required since the only access that is required is for API gateway.
 
-## Custom Lambda authorizer
+###  Custom Lambda authorizer
 
 An API Authorizer is a Lambda function that performs authentication and authorization on requests prior to AWS API Gateway execution. The Lambda returns an IAM policy that either permits or blocks the API requests that contain a particular authorization token. The returning IAM policy is then cached by the API Gateway so it can be later reused for up to 1 hour.
 
@@ -131,9 +134,11 @@ Examples:
 
 
 
-## Sample Function python 2.7 
+## Sample pre post trigger Function python 2.7 and AWS blue print for lambda authorizer 
 
 - https://github.com/vaquarkhan/aws-lambda-example
+
+
 - https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
 -----------------------------------------------------------------------------------------------------
 
