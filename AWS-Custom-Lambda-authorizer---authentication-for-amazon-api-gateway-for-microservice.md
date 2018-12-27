@@ -160,3 +160,4 @@ Above notes i have created using  aws doc,image and following links
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/call-api-with-api-gateway-lambda-authorization.html
 - https://www.slideshare.net/AmazonWebServices/security-best-practices-for-serverless-applications-july-2017-aws-online-tech-talks
 - https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
+- https://github.com/UWFosterIT/aws-cognito/wiki/Step-1:-AWS-AuthN-using-Cognito-User-Pool-with-SAML-Federation-at-the-UW
