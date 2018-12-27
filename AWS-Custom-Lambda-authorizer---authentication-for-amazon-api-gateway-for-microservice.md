@@ -142,7 +142,6 @@ Examples:
 - https://github.com/vaquarkhan/aws-lambda-example
 
 
-- https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
 -----------------------------------------------------------------------------------------------------
 
 Above notes i have created using  aws doc,image and following links
@@ -160,3 +159,4 @@ Above notes i have created using  aws doc,image and following links
 - https://blog.codecentric.de/en/2018/04/aws-lambda-authorizer/
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/call-api-with-api-gateway-lambda-authorization.html
 - https://www.slideshare.net/AmazonWebServices/security-best-practices-for-serverless-applications-july-2017-aws-online-tech-talks
+- https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
