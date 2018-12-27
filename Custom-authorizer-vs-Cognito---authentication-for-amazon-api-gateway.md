@@ -108,7 +108,7 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 ## Sample Function python 2.7 
 
 - https://github.com/vaquarkhan/aws-lambda-example
-
+- https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
 -----------------------------------------------------------------------------------------------------
 
 Above notes i have created using  aws doc,image and following links
