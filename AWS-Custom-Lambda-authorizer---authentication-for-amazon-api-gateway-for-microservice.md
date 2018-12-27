@@ -114,13 +114,14 @@ Its like reinventing the wheel. Why do it when Amazon has already done it for yo
 
 Note : The authorizer is an intercepting mechanism provided so that you can add custom logic into lambda function and call in authorize calls. The custom logic may use rules based authorization.
 
-[Control a Lambda Function of a Lambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html#api-gateway-lambda-authorizer-types)
 
 -----------------------------------------------------------------------------------------
 
 
 ![Alt Text](https://cdn-images-1.medium.com/max/1000/1*b46gRLzVry1kr8ikUOrXMg.jpeg)
 
+
+[Control a Lambda Function of a Lambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html#api-gateway-lambda-authorizer-types)
 
 
 Examples:
