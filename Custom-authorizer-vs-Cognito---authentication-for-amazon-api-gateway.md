@@ -34,8 +34,12 @@ Chances of missing some crucial aspects are always there.
 Its like reinventing the wheel. Why do it when Amazon has already done it for you.
 
 
+Note : The authorizer is an intercepting mechanism provided so that you can add custom logic into lambda function and call in authorize calls. The custom logic may use rules based authorization.
+
+
 -------------------------------------------------------------------------------------------------------
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
 - https://blog.codecentric.de/en/2018/04/aws-lambda-authorizer/
 - https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints/blob/master/blueprints/java/src/io/TokenAuthorizerContext.java
+- https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
 - https://stackoverflow.com/questions/40656761/custom-authorizer-vs-cognito-authentication-for-amazon-api-gateway-web-appli
