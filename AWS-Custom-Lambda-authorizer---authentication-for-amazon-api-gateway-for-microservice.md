@@ -7,19 +7,24 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 
 1. Amazon Cognito user pool                  - User pool authorizer.
 2. Amazon Cognito federated identities       - AWS IAM Authorization.
-3. Custom identity providers                 - Custom Autorizer
+3. Custom Lambda identity providers                 - Custom Autorizer
 
+
+Custom Lambda identity providers has two different options.
+1. Token
+2. Request    
 
 ![Alt Text](https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2017/09/27/Screen-Shot-2017-09-13-at-10.13.18-AM-215x300.png)
 
 
-AWS introduced a new type of authorizer in Amazon API Gateway, enhanced request authorizers. Previously, custom authorizers received only the bearer token included in the request and the ARN of the API Gateway method being called. Enhanced request authorizers receive all of the headers, query string, and path parameters as well as the request context. This enables you to make more sophisticated authorization decisions based on parameters such as the client IP address, user agent, or a query string parameter alongside the client bearer token.
+Previously, custom authorizers received only the bearer token included in the request and the ARN of the API Gateway method being called.
+
+Enhanced request authorizers receive all of the headers, query string, and path parameters as well as the request context. This enables you to make more sophisticated authorization decisions based on parameters such as the client IP address, user agent, or a query string parameter alongside the client bearer token.
 
 So Authorizers can use token and request.
 
 
 TOKEN type Lambda authorizers grant a caller permissions to invoke a given request using an authorization token passed in a header. The token could be, for example, an OAuth token.
-
 
 Token-based lambda authorizers receive the below object as its event to process the authorization request:
 
@@ -71,6 +76,7 @@ For request-based lambda authorizers, lambda receives the event object as below:
 
 
 -----------------------------------------------------------------------------------------
+Cognito vs Custom lambda authorizer pros and cons 
 
 ## AWS Cognito:
 
