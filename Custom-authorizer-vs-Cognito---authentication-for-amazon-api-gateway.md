@@ -123,3 +123,4 @@ Above notes i have created using  aws doc,image and following links
 - https://dzone.com/articles/reuse-authorizers-across-aws-apis
 - https://stackoverflow.com/questions/40656761/custom-authorizer-vs-cognito-authentication-for-amazon-api-gateway-web-appli
 - https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers/part-3
+- https://blog.codecentric.de/en/2018/04/aws-lambda-authorizer/
