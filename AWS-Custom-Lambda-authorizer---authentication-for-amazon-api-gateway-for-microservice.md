@@ -109,6 +109,19 @@ Note : The authorizer is an intercepting mechanism provided so that you can add 
 
 
 
+Examples:
+
+1. **Example using a self-encoded access token**<br/>
+[Introducing custom authorizers in Amazon API Gateway](https://aws.amazon.com/jp/blogs/compute/introducing-custom-authorizers-in-amazon-api-gateway) ([AWS Compute Blog](https://aws.amazon.com/blogs/compute/))
+
+2. **Example using an unrealistic access token**<br/>
+[Enable Amazon API Gateway Custom Authorization](http://docs.aws.amazon.com/apigateway/latest/developerguide/use-custom-authorizer.html) ([AWS Documentation](https://aws.amazon.com/documentation/))
+
+3. **Example using an external authorization server**<br/>
+[Amazon API Gateway Custom Authorizer + OAuth](https://www.authlete.com/documents/article/custom_authorizer) ([Authlete](https://www.authlete.com/))
+
+
+
 ## Sample Function python 2.7 
 
 - https://github.com/vaquarkhan/aws-lambda-example
