@@ -29,7 +29,23 @@ The script when changing the password looks something like this. Please fill in 
 
 ----------------------------------------------------------------------------------------------
 
+  - 5. Acquisition of IdToken
 
+IdToken etc will be returned after resetting the password of the user in step 4, but IdToken will expire in 1 hour by default, so we need to reacquire it. In such a case, you can reacquire with the following command
+
+
+----------------------------------------------------------------------------------------------
+
+        aws cognito-idp admin-initiate-auth --user-pool-id <user_pool_id> --client-id <client_id> --auth-flow 
+        ADMIN_NO_SRP_AUTH --auth-parameters USERNAME=<user_name>,PASSWORD=<password>
+
+----------------------------------------------------------------------------------------------
+
+### Building an API
+
+ 
+- https://dev.classmethod.jp/cloud/aws/verify_cognit_idtoken_by_apig_custom_auth/
+- https://dev.classmethod.jp/server-side/serverless/lambda-authorizer/
 
 
 
