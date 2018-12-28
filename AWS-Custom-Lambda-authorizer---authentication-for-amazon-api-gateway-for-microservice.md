@@ -1,5 +1,27 @@
 Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0.
 
+
+#### Advantages for using Cognito:
+
+- Managed service, less components to implement/monitor/scale
+- Easily configurable via portal, CLI and templates
+- Supports multiple flows for authentication (client side, server side, OAuth2, custom)
+- Supports Lambda triggered functions on authentication/registration events
+- Uses JWT signed tokens which can be passed directly to clients in session cookies and used to verify requests and passed in related API calls so a single authentication/authorisation method can be used through your stack statelessly
+Group membership, supplied in access token can be used for authorisation (e.g. users in group “Admin” can perform admin functions)
+-Handles:
+-User group membership and attribute storage
+-Email/Phone verification
+-User invitation
+-Login/Signup UI forms (customisable)
+-Password reset
+
+#### Disadvantages:
+
+- Less control over authentication/authorisation (limits to UI/flow customisation)
+- Potential for lock-in (cannot export users with passwords for migration)
+
+
 ##### Amazon Cognito has three type of authorizer 
 
 1. Amazon Cognito user pool                  - User pool authorizer.
