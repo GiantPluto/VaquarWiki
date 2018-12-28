@@ -1,9 +1,17 @@
 The advantage of using Lambda Function is that it can perform authorization processing other than verification of IdToken. For example, you can write processing according to your application, such as IP restrictions and allowing only specific user agents.
 
-1) Create Cognito user pool:
+### Create Cognito user pool:
+  - 1. Create a new user pool
+  - 2. Setting attribute of user pool
+  - 3. Application client registration for user pool (This time, I will remove client secret. Also, auth - flow selects ADMIN_NO_SRP_AUTH)
+  - 4. User registration after user pool creation
+ 
 
+#### if you choose forse password change not not creted custom UI following script help to change password.
 
 The script when changing the password looks something like this. Please fill in the necessary items accordingly. After execution, I think that I can confirm that IdToken etc is output to the console.
+
+----------------------------------------------------------------------------------------------
 
        #!/bin/sh
  
@@ -19,12 +27,15 @@ The script when changing the password looks something like this. Please fill in 
      name NEW_PASSWORD_REQUIRED --challenge-responses USERNAME=${user_name},NEW_PASSWORD=${new_password} --session 
      ${session}
 
+----------------------------------------------------------------------------------------------
 
 
 
 
-Reference site
 
-https://aws.amazon.com/jp/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
-https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt
-https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints
+
+#### Reference site
+
+- https://aws.amazon.com/jp/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
+- https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt
+- https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints
