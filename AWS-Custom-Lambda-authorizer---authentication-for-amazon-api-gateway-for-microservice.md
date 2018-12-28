@@ -9,12 +9,13 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 - Supports Lambda triggered functions on authentication/registration events
 - Uses JWT signed tokens which can be passed directly to clients in session cookies and used to verify requests and passed in related API calls so a single authentication/authorisation method can be used through your stack statelessly
 Group membership, supplied in access token can be used for authorisation (e.g. users in group “Admin” can perform admin functions)
--Handles:
--User group membership and attribute storage
--Email/Phone verification
--User invitation
--Login/Signup UI forms (customisable)
--Password reset
+
+- Handles:
+- User group membership and attribute storage
+- Email/Phone verification
+- User invitation
+- Login/Signup UI forms (customisable)
+- Password reset
 
 #### Disadvantages:
 
