@@ -185,3 +185,4 @@ Above notes i have created using  aws doc,image and following links
 - https://medium.com/@awskarthik82/part-1-securing-aws-api-gateway-using-aws-cognito-oauth2-scopes-410e7fb4a4c0
 - https://github.com/UWFosterIT/aws-cognito/wiki/Step-1:-AWS-AuthN-using-Cognito-User-Pool-with-SAML-Federation-at-the-UW
 - https://hackernoon.com/full-guide-to-building-a-serverless-api-with-zero-code-c4f7871998f5
+- https://dzone.com/articles/the-brief-summary-of-hashiconf-2018-insights
