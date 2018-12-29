@@ -193,3 +193,6 @@ Above notes i have created using  aws doc,image and following links
 - https://github.com/UWFosterIT/aws-cognito/wiki/Step-1:-AWS-AuthN-using-Cognito-User-Pool-with-SAML-Federation-at-the-UW
 - https://hackernoon.com/full-guide-to-building-a-serverless-api-with-zero-code-c4f7871998f5
 - https://dzone.com/articles/the-brief-summary-of-hashiconf-2018-insights
+- https://aws.amazon.com/blogs/mobile/building-fine-grained-authorization-using-amazon-cognito-user-pools-groups/
+- https://www.slideshare.net/AmazonWebServices/securing-serverless-workloads-with-cognito-and-api-gateway-part-i-aws-security-day
+- https://www.slideshare.net/AmazonWebServices/securing-serverless-workloads-with-cognito-and-api-gateway-part-ii-aws-security-day
