@@ -138,6 +138,13 @@ Its like reinventing the wheel. Why do it when Amazon has already done it for yo
 Note : The authorizer is an intercepting mechanism provided so that you can add custom logic into lambda function and call in authorize calls. The custom logic may use rules based authorization.
 
 
+### ***
+The Cognito Authorizer is great for quickly getting things going and utilizing powerful out of the box authentication and authorization. This would be my first choice as it's the easiest to get going without needing to understand the smaller details first. Just handle sending back the id token after logging the user in then pass that id token to your protected API routes in the header of your requests (e.g. "X-Auth-Token": "[id_token]").
+
+The Lambda Custom Authorizer with AWS_IAM is great if you need to take the validation a step further than the built in solution API Gateway provides with Cognito Authroizer. If you need to allow users to sign in with their Google, Facebook, Amazon, Twitter or any other identity provider account. Then Lambda Custom Authorizer with AWS_IAM would be your choice as it allows for this type of functionality.
+
+
+
 -----------------------------------------------------------------------------------------
 
 
