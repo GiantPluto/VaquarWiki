@@ -19,7 +19,7 @@ Amazon Cognito Federated Identities enables developers to create unique identiti
 
 -------------------------------------------------------------------
 
-
+- https://www.youtube.com/watch?v=VZqG7HjT2AQ&t=2169s
 - https://www.youtube.com/watch?v=KWjgiNgDfwI
 - https://www.youtube.com/watch?v=aKn081SFBJU
 - https://github.com/awslabs/aws-serverless-auth-reference-app
