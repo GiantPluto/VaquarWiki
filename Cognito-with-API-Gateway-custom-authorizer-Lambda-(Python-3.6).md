@@ -55,3 +55,4 @@ IdToken etc will be returned after resetting the password of the user in step 4,
 - https://aws.amazon.com/jp/premiumsupport/knowledge-center/decode-verify-cognito-json-token/
 - https://github.com/awslabs/aws-support-tools/tree/master/Cognito/decode-verify-jwt
 - https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints
+- https://blog.kdgregory.com/2016/12/server-side-authentication-with-amazon.html
