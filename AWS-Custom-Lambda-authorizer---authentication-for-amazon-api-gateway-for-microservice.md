@@ -149,7 +149,7 @@ The Lambda Custom Authorizer with AWS_IAM is great if you need to take the valid
 
 
 ![Alt Text](https://cdn-images-1.medium.com/max/1000/1*b46gRLzVry1kr8ikUOrXMg.jpeg)
-
+![Alt Text](https://i.stack.imgur.com/1cq56.png)
 
 [Control a Lambda Function of a Lambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html#api-gateway-lambda-authorizer-types)
 
