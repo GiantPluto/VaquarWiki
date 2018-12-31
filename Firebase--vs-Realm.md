@@ -62,15 +62,15 @@ There are tons of third party libraries available for React Native to customise 
 
 ---------------------------------------------------------------------------
 
-### Architectural differences
+#### Architectural differences
 
 - https://www.azilen.com/blog/realm-mobile-platform-real-time-data-synchronization/
 - https://www.codementor.io/dhananjaypatel/firebase-authentication-database-all-that-counts-65mwkxp3w
 
 ---------------------------------------------------------------------------
 
-# ROOM google library to store data 
+#### ROOM google library to store data 
 - https://developer.android.com/training/data-storage/room/
 
-# Firebase vs Firestore
+#### Firebase vs Firestore
 - https://medium.com/@siwakornsittilerdpaisal/realtime-database-vs-cloud-firestore-3cad1eeed0f4
