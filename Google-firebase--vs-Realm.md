@@ -29,7 +29,10 @@ Realm is an object-oriented database rather than a relational database. OO model
 
 - Firebase Realtime database is a remote database for storing the entire application’s data while realm is mostly used for localdata where you say one person’s data in phone and make it work even when the app is offline.
 
-- http://offlinefirst.org/sync/
+- - http://offlinefirst.org/sync/
+
+![Alt Text](https://github.com/vaquarkhan/vaquarkhan/blob/master/Design/Untitled.png)
+
 
 ---------------------------------------------------------------------------
 
