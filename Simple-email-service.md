@@ -10,7 +10,57 @@ I would suggest you setup the SES service in any of the available regions (say E
 
 For more info, see Connecting to the Amazon SES SMTP Endpoint
 
+
+#### Error 👍 
+
+`{`
+  `"errorMessage": "Inaccessible host: `email.us-east-2.amazonaws.com'. This service may not be available in the `us-east-2' region.",`
+  `"errorType": "UnknownEndpoint",`
+  `"stackTrace": [`
+    `"Request.ENOTFOUND_ERROR (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:481:46)",`
+    `"Request.callListeners (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:105:20)",`
+    `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:77:10)",`
+    `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/request.js:683:14)",`
+    `"ClientRequest.error (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:320:22)",`
+    `"ClientRequest.<anonymous> (/var/runtime/node_modules/aws-sdk/lib/http/node.js:89:19)",`
+    `"emitOne (events.js:116:13)",`
+    `"ClientRequest.emit (events.js:211:7)",`
+    `"TLSSocket.socketErrorListener (_http_client.js:387:9)",`
+    `"emitOne (events.js:116:13)"`
+  `]`
+`}`
+
+
+Logs 👍 
+
+`START RequestId: acab6449-0e1b-11e9-a486-ab69638cb57b Version: $LATEST`
+`2019-01-01T23:19:24.047Z	acab6449-0e1b-11e9-a486-ab69638cb57b	Received event: { 'name-input': 'Vaquar',`
+  `'phone-input': '2244360783',`
+  `email: 'vaquar.cna@gmail.com',`
+  `'description-input': 'test' }`
+`2019-01-01T23:19:25.038Z	acab6449-0e1b-11e9-a486-ab69638cb57b	{"errorMessage":"Inaccessible host: `email.us-east-2.amazonaws.com'. This service may not be available in the `us-east-2' region.","errorType":"UnknownEndpoint","stackTrace":["Request.ENOTFOUND_ERROR (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:481:46)","Request.callListeners (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:105:20)","Request.emit (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:77:10)","Request.emit (/var/runtime/node_modules/aws-sdk/lib/request.js:683:14)","ClientRequest.error (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:320:22)","ClientRequest.<anonymous> (/var/runtime/node_modules/aws-sdk/lib/http/node.js:89:19)","emitOne (events.js:116:13)","ClientRequest.emit (events.js:211:7)","TLSSocket.socketErrorListener (_http_client.js:387:9)","emitOne (events.js:116:13)"]}`
+`END RequestId: acab6449-0e1b-11e9-a486-ab69638cb57b`
+`REPORT RequestId: acab6449-0e1b-11e9-a486-ab69638cb57b	Duration: 1013.79 ms	Billed Duration: 1100 ms 	Memory Size: 128 MB	Max Memory Used: 58 MB	`
+
+
+#### How to solve 👍 
+
+- https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#endpoint-property
+- https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html
+
 ---------------------------------------------------------
 #### Use GMail with your own domain for free thanks to Amazon SES & Lambda
 
+        "endpoint (String) — The endpoint URI to send requests to. The default endpoint is built from the configured 
+         region. The endpoint should be a string like 'https://{service}.{region}.amazonaws.com'. "
+
+`// Load the SDK for JavaScript`
+`var AWS = require('aws-sdk');`
+
+`// Set the region `
+`AWS.config.update({region: 'us-west-2'});`
+
+---------------------------------------------------------
+
 - http://www.daniloaz.com/en/use-gmail-with-your-own-domain-for-free-thanks-to-amazon-ses-lambda/
+- https://dev.to/adnanrahic/building-a-serverless-contact-form-with-aws-lambda-and-aws-ses-4jm0
