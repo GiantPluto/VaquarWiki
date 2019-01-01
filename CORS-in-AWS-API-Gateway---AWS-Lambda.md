@@ -1,0 +1,2 @@
+- https://stackoverflow.com/questions/43567284/cors-in-aws-api-gateway-aws-lambda
+- https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html
