@@ -13,23 +13,23 @@ For more info, see Connecting to the Amazon SES SMTP Endpoint
 
 #### Error 👍 
 
-   `{`
-      `"errorMessage": "Inaccessible host: `email.us-east-2.amazonaws.com'. This service may not be available in the `us- 
-        east-2' region.",`
-       `"errorType": "UnknownEndpoint",`
-       `"stackTrace": [`
-       `"Request.ENOTFOUND_ERROR (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:481:46)",`
-       `"Request.callListeners (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:105:20)",`
-       `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:77:10)",`
-       `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/request.js:683:14)",`
-       `"ClientRequest.error (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:320:22)",`
-       `"ClientRequest.<anonymous> (/var/runtime/node_modules/aws-sdk/lib/http/node.js:89:19)",`
-       `"emitOne (events.js:116:13)",`
-       `"ClientRequest.emit (events.js:211:7)",`
-       `"TLSSocket.socketErrorListener (_http_client.js:387:9)",`
-       `"emitOne (events.js:116:13)"`
-        `]`
-      `}`
+       `{`
+          `"errorMessage": "Inaccessible host: `email.us-east-2.amazonaws.com'. This service may not be available in the `us- 
+           east-2' region.",`
+          `"errorType": "UnknownEndpoint",`
+          `"stackTrace": [`
+          `"Request.ENOTFOUND_ERROR (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:481:46)",`
+          `"Request.callListeners (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:105:20)",`
+          `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/sequential_executor.js:77:10)",`
+          `"Request.emit (/var/runtime/node_modules/aws-sdk/lib/request.js:683:14)",`
+           `"ClientRequest.error (/var/runtime/node_modules/aws-sdk/lib/event_listeners.js:320:22)",`
+          `"ClientRequest.<anonymous> (/var/runtime/node_modules/aws-sdk/lib/http/node.js:89:19)",`
+           `"emitOne (events.js:116:13)",`
+           `"ClientRequest.emit (events.js:211:7)",`
+           `"TLSSocket.socketErrorListener (_http_client.js:387:9)",`
+           `"emitOne (events.js:116:13)"`
+            `]`
+         `}`
 
 
 Logs 👍 
