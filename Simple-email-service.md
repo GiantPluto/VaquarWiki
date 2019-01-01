@@ -10,3 +10,7 @@ I would suggest you setup the SES service in any of the available regions (say E
 
 For more info, see Connecting to the Amazon SES SMTP Endpoint
 
+---------------------------------------------------------
+#### Use GMail with your own domain for free thanks to Amazon SES & Lambda
+
+- http://www.daniloaz.com/en/use-gmail-with-your-own-domain-for-free-thanks-to-amazon-ses-lambda/
