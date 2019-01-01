@@ -2,6 +2,10 @@
 - https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html
 
 -----------------------------------------
+#### What is CORS
+
+Cross Origin Resource Sharing is something that is declared by the w3c on communication between different domains. By CORS, communications between the same domain will be allowed to users and the communications that are cross-originated will be restricted to a few techniques. We can see this when we are talking to APIs mostly. The REST call may give us an error. This is because the server and the client sides are on different domains and the communication between them are restricted by CORS rules.
+
 
 #### What went wrong?
 
