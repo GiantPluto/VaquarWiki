@@ -77,3 +77,5 @@ Logs 👍
 
 - http://www.daniloaz.com/en/use-gmail-with-your-own-domain-for-free-thanks-to-amazon-ses-lambda/
 - https://dev.to/adnanrahic/building-a-serverless-contact-form-with-aws-lambda-and-aws-ses-4jm0
+- https://docs.aws.amazon.com/sdkforruby/api/Aws/SES/Client.html
+- 
