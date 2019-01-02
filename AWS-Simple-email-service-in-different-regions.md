@@ -92,3 +92,4 @@ Logs 👍
 - https://dev.to/adnanrahic/building-a-serverless-contact-form-with-aws-lambda-and-aws-ses-4jm0
 - https://docs.aws.amazon.com/sdkforruby/api/Aws/SES/Client.html
 - https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/
+- https://github.com/vaquarkhan/static-website-s3-dynamic-contactus
