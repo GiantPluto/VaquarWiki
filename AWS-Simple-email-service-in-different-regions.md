@@ -69,6 +69,19 @@ Logs 👍
      `// Set the region `
      `AWS.config.update({region: 'us-west-2'});`
 
+
+#### Results 👍 
+
+           START RequestId: 4bb51cd7-0e25-11e9-9f39-17c2f92fd31c Version: $LATEST
+           2019-01-02T00:28:16.108Z	4bb51cd7-0e25-11e9-9f39-17c2f92fd31c	Received event: { 'name-input': 'Vaquar',
+           'phone-input': '2244360783',
+            email: 'vaquar.cna@gmail.com',
+           'description-input': 'test' }
+            END RequestId: 4bb51cd7-0e25-11e9-9f39-17c2f92fd31c
+            REPORT RequestId: 4bb51cd7-0e25-11e9-9f39-17c2f92fd31c	Duration: 1193.88 ms	Billed Duration: 1200 ms 	 
+             Memory Size: 128 MB	Max Memory Used: 29 MB	
+
+
 #### Note : find your near SES available region and set in AWS SDK
 ---------------------------------------------------------
 #### Use GMail with your own domain for free thanks to Amazon SES & Lambda
