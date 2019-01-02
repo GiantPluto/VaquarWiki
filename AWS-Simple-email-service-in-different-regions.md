@@ -1,5 +1,3 @@
-- https://vmokshagroup.com/blog/setting-up-a-secure-email-engine-using-amazon-ses/
-
 ## Amazon SES and lambda instance in different regions
 
 SES not available in all region However, there is no reason you cannot connect cross-region to an SES service from your existing region. You do not need to change your app in your existing region to do this. While SES and networking best practices suggest you would want to choose an endpoint closest to your application, to reduce network latency, there is no SES requirement for your app instance to be in the same region as your SES service. Assuming you are using SMTP/S to send email, the email server can be anywhere on the internet.
@@ -93,3 +91,4 @@ Logs 👍
 - https://docs.aws.amazon.com/sdkforruby/api/Aws/SES/Client.html
 - https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/
 - https://github.com/vaquarkhan/static-website-s3-dynamic-contactus
+- https://vmokshagroup.com/blog/setting-up-a-secure-email-engine-using-amazon-ses/
