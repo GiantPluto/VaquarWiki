@@ -59,17 +59,21 @@ Logs 👍
 - https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html#endpoint-property
 - https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html
 
+
+     "endpoint (String) — The endpoint URI to send requests to. The default endpoint is built from the configured 
+         region. The endpoint should be a string like 'https://{service}.{region}.amazonaws.com'. "
+
+     ` // Load the SDK for JavaScript`
+     `var AWS = require('aws-sdk');`
+
+     `// Set the region `
+     `AWS.config.update({region: 'us-west-2'});`
+
+Note : find your near SES available region and set in AWS SDK
 ---------------------------------------------------------
 #### Use GMail with your own domain for free thanks to Amazon SES & Lambda
 
-        "endpoint (String) — The endpoint URI to send requests to. The default endpoint is built from the configured 
-         region. The endpoint should be a string like 'https://{service}.{region}.amazonaws.com'. "
-
-`// Load the SDK for JavaScript`
-`var AWS = require('aws-sdk');`
-
-`// Set the region `
-`AWS.config.update({region: 'us-west-2'});`
+      
 
 ---------------------------------------------------------
 
