@@ -69,11 +69,9 @@ Logs 👍
      `// Set the region `
      `AWS.config.update({region: 'us-west-2'});`
 
-Note : find your near SES available region and set in AWS SDK
+#### Note : find your near SES available region and set in AWS SDK
 ---------------------------------------------------------
 #### Use GMail with your own domain for free thanks to Amazon SES & Lambda
-
-      
 
 ---------------------------------------------------------
 
