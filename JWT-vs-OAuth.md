@@ -25,11 +25,16 @@ Oauth2 on other had is a set of rules or a procedure commonly called a framework
 
 Here is a more detailed explanation of the steps in the diagram:
 
-1 The application requests authorization to access service resources from the user
-2 If the user authorized the request, the application receives an authorization grant
-3 The application requests an access token from the authorization server (API) by presenting authentication of its own identity, and the authorization grant
+1 The application requests authorization to access service resources from the user.
+
+2 If the user authorized the request, the application receives an authorization grant.
+
+3 The application requests an access token from the authorization server (API) by presenting authentication of its own identity, and the authorization grant.
+
 4 If the application identity is authenticated and the authorization grant is valid, the authorization server (API) issues an access token to the application. Authorization is complete.
-5 The application requests the resource from the resource server (API) and presents the access token for authentication
+
+5 The application requests the resource from the resource server (API) and presents the access token for authentication.
+
 6 If the access token is valid, the resource server (API) serves the resource to the application
 Both these can be used together in transferring secure data.
 
