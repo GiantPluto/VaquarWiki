@@ -9,6 +9,18 @@ JWT stands for JSON Web Token as the name suggest it is only a token for transfe
 
 ![Alt Text](https://uploads.toptal.io/blog/image/125552/toptal-blog-image-1520247295599-b6253511e5f77cc92c6ccc019206e6e0.png)
 
+
+
+
+- http://jwt.io/
+- https://auth0.com/docs
+- http://www.toptal.com/web/cookie-free-authentication-with-json-web-tokens-an-example-in-laravel-and-angularjs
+- https://espeo.eu/blog/app-security-jwt-based-authentication/
+
+
+OAUTH:
+![Alt Text](https://i.stack.imgur.com/dboTu.png)
+
 Oauth2 on other had is a set of rules or a procedure commonly called a framework that help to authenticate and authorize two parties to transfer secured data.
 
 Here is a more detailed explanation of the steps in the diagram:
@@ -23,16 +35,6 @@ Both these can be used together in transferring secure data.
 
 **Where JWT come into play in 3rd 6th steps of oauth2**
 
-
-
-- http://jwt.io/
-- https://auth0.com/docs
-- http://www.toptal.com/web/cookie-free-authentication-with-json-web-tokens-an-example-in-laravel-and-angularjs
-- https://espeo.eu/blog/app-security-jwt-based-authentication/
-
-
-OAUTH:
-![Alt Text](https://i.stack.imgur.com/dboTu.png)
 
 - http://tutorials.jenkov.com/oauth2/overview.html
 
