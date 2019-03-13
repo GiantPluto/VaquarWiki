@@ -21,7 +21,7 @@ JWT stands for JSON Web Token as the name suggest it is only a token for transfe
 OAUTH:
 ![Alt Text](https://i.stack.imgur.com/dboTu.png)
 
-Oauth2 on other had is a set of rules or a procedure commonly called a framework that help to authenticate and authorize two parties to transfer secured data.
+Oauth2, on the other hand, is a set of rules or a procedure commonly called a framework that help to authenticate and authorize two parties to transfer secured data.
 
 Here is a more detailed explanation of the steps in the diagram:
 
