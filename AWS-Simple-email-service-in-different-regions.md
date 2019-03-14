@@ -92,3 +92,4 @@ Logs 👍
 - https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/
 - https://github.com/vaquarkhan/static-website-s3-dynamic-contactus
 - https://vmokshagroup.com/blog/setting-up-a-secure-email-engine-using-amazon-ses/
+- https://www.lambdatv.com/send-and-receive-email-for-serverless-developers
