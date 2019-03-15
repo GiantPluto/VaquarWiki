@@ -98,3 +98,5 @@ Logs 👍
 ------------------------------------------------------------
 - http://www.wisdomofjim.com/blog/sending-an-email-from-aws-lambda-function-in-nodejs-with-aws-simple-email-service
 - https://medium.com/@xoor/sending-emails-with-attachments-with-aws-lambda-and-node-js-e6a78500227c
+- https://github.com/vaquarkhan/lambda-send-attachment
+
