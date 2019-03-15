@@ -93,3 +93,8 @@ Logs 👍
 - https://github.com/vaquarkhan/static-website-s3-dynamic-contactus
 - https://vmokshagroup.com/blog/setting-up-a-secure-email-engine-using-amazon-ses/
 - https://www.lambdatv.com/send-and-receive-email-for-serverless-developers
+
+
+------------------------------------------------------------
+- http://www.wisdomofjim.com/blog/sending-an-email-from-aws-lambda-function-in-nodejs-with-aws-simple-email-service
+- https://medium.com/@xoor/sending-emails-with-attachments-with-aws-lambda-and-node-js-e6a78500227c
