@@ -88,3 +88,13 @@
         post_req.end();
 
       }
+
+
+-----------------------------
+**COMMON error:**
+
+When your host (which you pass in as httpaction) has the scheme (so "http://") in front of it. Your host should strictly be the domain like "www.google.com" not "http://www.google.com" or "www.google.com/hello-world" or "http://www.google.com/hello-world".
+
+Keep it just the domain.
+
+Here's an example: http://allampersandall.blogspot.com/2012/03/nodejs-http-request-example.html
