@@ -1,0 +1,2 @@
+- https://medium.com/devopslinks/microservices-orchestration-with-kubernetes-1cbb737cfa46
+- https://medium.com/devopslinks/microservices-mesh-part-ii-istio-basics-b9c343594a05
