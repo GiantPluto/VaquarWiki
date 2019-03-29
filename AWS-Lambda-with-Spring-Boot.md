@@ -1,1 +1,3 @@
-https://keyholesoftware.com/2018/04/26/aws-lambda-with-spring-boot/
+- https://keyholesoftware.com/2018/04/26/aws-lambda-with-spring-boot/
+- https://github.com/awslabs/aws-serverless-java-container/wiki/Quick-start---Spring-Boot
+- https://github.com/vaquarkhan/aws-serverless-java-container
