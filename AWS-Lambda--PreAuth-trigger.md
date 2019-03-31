@@ -13,7 +13,7 @@
          const params = {
          UserPoolId: event.userPoolId,
          Filter: 'email = "' + email + '"',
-        };
+          };
     
         cognitoIdp.listUsers(params).promise()
        .then (results => {
