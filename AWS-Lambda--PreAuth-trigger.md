@@ -44,3 +44,6 @@
          };
         return response;
     };*/
+
+
+-  https://github.com/aws-amplify/amplify-js/issues/1565
