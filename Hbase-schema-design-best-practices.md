@@ -1,3 +1,8 @@
+
+- https://blog.cloudera.com/blog/2011/04/hbase-dos-and-donts/
+- https://vimeo.com/98485789
+---------------------
+
 - https://mapr.com/blog/guidelines-hbase-schema-design/
 - https://community.hortonworks.com/questions/101309/hbase-schema-design-for-complex-data.html
 - http://dwgeek.com/hbase-table-schema-design-concept.html/
@@ -54,4 +59,15 @@
 - https://www.linkedin.com/pulse/importance-compression-hbase-performance-tuning-part-deshpande/
 - 
 
+--------------------------
+### Rowkey Design
+
+- https://archive.cloudera.com/cdh5/cdh/5/hbase-0.98.6-cdh5.2.0/book/rowkey.design.html
+- https://hbase.apache.org/book.html#rowkey.design
+- https://community.hortonworks.com/questions/101309/hbase-schema-design-for-complex-data.html
+- https://community.hortonworks.com/questions/186343/can-region-hotspotting-be-avoided-if-hbase-table-i.html
+- https://tyronmadushanka.blogspot.com/2016/12/hbase-avoid-regionserver-hotspotting.html
+- https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781783981045/5/ch05lvl1sec33/avoiding-region-hotspotting
+
+------------------
 
